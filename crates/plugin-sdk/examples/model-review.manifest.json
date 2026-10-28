@@ -1,0 +1,12 @@
+{
+  "id":"example.model-review",
+  "name":"Model-assisted work review",
+  "version":"1.0.0",
+  "api_min":2,
+  "api_max":2,
+  "host":"service",
+  "description":"Propose a model request, wait for explicit user approval, then display a suggestion or propose an attributed observation. The host owns model connections and credentials.",
+  "hooks":["document.revision.created"],
+  "requests":["commands.invoke","sources.read","memory.propose","models.request"],
+  "contributions":[{"id":"review-work","kind":"command","title":"Model-assisted review","description":"Prepare a prompt for the user's chosen granted connection, then display its bounded result."}]
+}

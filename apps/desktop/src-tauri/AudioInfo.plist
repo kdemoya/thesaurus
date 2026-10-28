@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>dev.thesaurus.audio</string>
+<key>CFBundleName</key><string>Thesaurus Audio</string>
+<key>NSMicrophoneUsageDescription</key><string>Record the microphone you select for a meeting and transcribe it locally.</string>
+<key>NSScreenCaptureUsageDescription</key><string>Record system audio for a meeting only when you select system audio and start recording.</string>
+</dict></plist>

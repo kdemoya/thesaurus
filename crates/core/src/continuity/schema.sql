@@ -1,0 +1,11 @@
+CREATE TABLE workflow_operations (key TEXT PRIMARY KEY, request_hash TEXT NOT NULL, result_id TEXT NOT NULL);
+CREATE TABLE work_threads (id TEXT PRIMARY KEY, project_id TEXT NOT NULL REFERENCES project_briefs(id), record TEXT NOT NULL);
+CREATE TABLE thread_entries (id TEXT PRIMARY KEY, thread_id TEXT NOT NULL REFERENCES work_threads(id), record TEXT NOT NULL);
+CREATE INDEX thread_entries_owner ON thread_entries(thread_id);
+CREATE TABLE thread_history (sequence INTEGER PRIMARY KEY AUTOINCREMENT, thread_id TEXT NOT NULL REFERENCES work_threads(id), record TEXT NOT NULL);
+CREATE TABLE thread_contexts (id TEXT PRIMARY KEY, thread_id TEXT NOT NULL REFERENCES work_threads(id), signature TEXT NOT NULL, record TEXT NOT NULL, run_id TEXT UNIQUE REFERENCES runtime_runs(id), created_at TEXT NOT NULL);
+CREATE INDEX thread_contexts_owner ON thread_contexts(thread_id);
+CREATE TABLE meeting_series (id TEXT PRIMARY KEY, project_id TEXT NOT NULL REFERENCES project_briefs(id), record TEXT NOT NULL);
+CREATE TABLE meeting_occurrences (id TEXT PRIMARY KEY, series_id TEXT NOT NULL REFERENCES meeting_series(id), source_id TEXT NOT NULL REFERENCES sources(id), revision INTEGER NOT NULL, record TEXT NOT NULL, UNIQUE(series_id,source_id,revision));
+CREATE INDEX meeting_occurrences_owner ON meeting_occurrences(series_id);
+PRAGMA user_version=4;

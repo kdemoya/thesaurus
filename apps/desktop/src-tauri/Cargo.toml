@@ -1,0 +1,34 @@
+[package]
+name = "thesaurus-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2.7.3", features = [] }
+
+[dependencies]
+anyhow.workspace = true
+tauri = { version = "2.12.4", features = ["tray-icon"] }
+serde.workspace = true
+serde_json.workspace = true
+thesaurus-client.workspace = true
+thesaurus-core.workspace = true
+tokio.workspace = true
+reqwest.workspace = true
+futures-util = "0.3"
+fs2 = "0.4"
+libc = "0.2"
+
+thesaurus-contracts.workspace = true
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6.5"
+objc2-app-kit = { version = "0.3.2", default-features = false, features = ["std", "NSWindow", "NSPanel", "NSView", "NSResponder", "NSGraphics", "NSScreen"] }
+objc2-foundation = { version = "0.3.2", default-features = false, features = ["std", "NSArray", "NSGeometry", "NSObject", "NSString", "NSBundle"] }
+objc2-user-notifications = { version = "0.3.2", default-features = false, features = ["std", "UNUserNotificationCenter", "UNNotificationSettings", "UNNotificationContent", "UNNotificationRequest", "UNNotification", "UNNotificationTrigger", "block2"] }
+block2 = "0.6.2"
+
+[dev-dependencies]
+tempfile = "3"

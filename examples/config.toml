@@ -1,0 +1,37 @@
+# Restart thesaurus serve after changing connections.
+# No connection is enabled by default. Imports use local rules without a model.
+# Existing-agent authentication stays with the installed runtime.
+#
+# [[connections]]
+# id = "my-claude"
+# kind = "claude_cli"
+# daily_limit = 10
+#
+# [[connections]]
+# id = "my-codex"
+# kind = "codex_cli"
+# daily_limit = 10
+#
+# [[connections]]
+# id = "local-model"
+# kind = "openai_compatible"
+# endpoint = "http://127.0.0.1:11434/v1"
+# model = "your-installed-model"
+# daily_limit = 20
+#
+# [[connections]]
+# id = "api-account"
+# kind = "openai_compatible"
+# endpoint = "https://your-provider.example/v1"
+# model = "your-model"
+# token_env = "THESAURUS_MODEL_API_KEY"
+# daily_limit = 10
+#
+# ACP runtime: run ./scripts/install-acp.sh first, then use the absolute path below.
+# This Codex helper uses the installed CLI's ChatGPT login and disables API-key fallback.
+# [[connections]]
+# id = "codex-acp"
+# kind = "acp"
+# command = "/absolute/path/to/thesaurus/scripts/codex-acp.sh"
+# args = []
+# daily_limit = 3

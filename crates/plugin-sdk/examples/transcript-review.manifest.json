@@ -1,0 +1,37 @@
+{
+  "id": "example.transcript-review",
+  "name": "Transcript follow-up reviewer",
+  "version": "1.1.0",
+  "api_min": 1,
+  "api_max": 2,
+  "host": "service",
+  "description": "Proposes a cited observation when a selected transcript contains TODO or follow up.",
+  "hooks": [
+    "document.revision.created"
+  ],
+  "requests": [
+    "sources.read",
+    "memory.propose",
+    "commands.invoke"
+  ],
+  "contributions": [
+    {
+      "id": "review-followups",
+      "kind": "processor",
+      "title": "Review follow-ups",
+      "description": "Local deterministic transcript review."
+    },
+    {
+      "id": "summarize-followups",
+      "kind": "command",
+      "title": "Find follow-ups",
+      "description": "Return cited follow-up candidates without changing memory."
+    },
+    {
+      "id": "followups-panel",
+      "kind": "panel",
+      "title": "Follow-up panel",
+      "description": "Display a declarative, cited panel for selected transcript revisions."
+    }
+  ]
+}

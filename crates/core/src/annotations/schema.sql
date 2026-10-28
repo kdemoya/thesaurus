@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS annotation_notes (id TEXT PRIMARY KEY,document_id TEXT NOT NULL REFERENCES documents(id),source_id TEXT NOT NULL REFERENCES sources(id),record TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS annotation_notes_document ON annotation_notes(document_id);
+CREATE TABLE IF NOT EXISTS annotation_note_history (id INTEGER PRIMARY KEY AUTOINCREMENT,note_id TEXT NOT NULL REFERENCES annotation_notes(id),record TEXT NOT NULL,action TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS annotation_note_history_owner ON annotation_note_history(note_id,id);
+CREATE TABLE IF NOT EXISTS annotation_corrections (source_id TEXT PRIMARY KEY REFERENCES sources(id),record TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS annotation_correction_history (id INTEGER PRIMARY KEY AUTOINCREMENT,source_id TEXT NOT NULL REFERENCES sources(id),kind TEXT NOT NULL,contributor TEXT NOT NULL,created_at TEXT NOT NULL,detail TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS annotation_correction_history_source ON annotation_correction_history(source_id,id);
+CREATE TABLE IF NOT EXISTS annotation_recomputations (id TEXT PRIMARY KEY,record TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS annotation_task_baselines (task_id TEXT PRIMARY KEY REFERENCES tasks(id),title TEXT NOT NULL,owner TEXT);
+CREATE TABLE IF NOT EXISTS annotation_candidate_inputs (document_id TEXT NOT NULL,revision INTEGER NOT NULL,line INTEGER NOT NULL,normalized_title TEXT NOT NULL,title TEXT NOT NULL,owner TEXT,PRIMARY KEY(document_id,revision,line,normalized_title));

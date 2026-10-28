@@ -1,0 +1,23 @@
+{
+  "id": "example.file-workflow",
+  "name": "Local file workflow",
+  "version": "1.0.0",
+  "api_min": 2,
+  "api_max": 2,
+  "host": "service",
+  "description": "Import one configured local notes file and prepare cited task status previews for explicit user review. No model or outbound service is used.",
+  "requests": ["connectors.sync", "sources.read", "actions.propose", "eval.check", "setup.check"],
+  "setup": [
+    {"id":"notes-file","title":"Check the notes file","description":"Read the configured file to verify bounded UTF-8 input without importing sources.","applies_to":["sync-file"],"prerequisites":[{"kind":"configuration","key":"path"}],"check":true,"repair":{"kind":"configuration","key":"path"}}
+  ],
+  "configuration": [
+    {"key":"path","label":"Notes file path","kind":"string","required":true,"description":"An absolute path to a UTF-8 notes file up to 64 KB. This trusted local executable reads exactly that configured file."},
+    {"key":"title","label":"Imported title","kind":"string","default":"Imported notes","description":"Title of the canonical source imported by the connector."},
+    {"key":"minimum-evidence","label":"Minimum exact citations","kind":"integer","default":1,"description":"The evaluation contribution requires 1–20 distinct valid citations per case."}
+  ],
+  "contributions": [
+    {"id":"sync-file","kind":"connector","title":"Import notes file","description":"Read the configured file and submit one stable snapshot for host import."},
+    {"id":"review-tasks","kind":"action","title":"Review action markers","description":"Propose accepting current candidate tasks from explicitly selected sources. The host creates reviewable previews; this example returns proposals only."},
+    {"id":"check-evidence","kind":"evaluation","title":"Check evidence coverage","description":"Check selected outputs in a saved project or personal eval run for a configured minimum of distinct exact evidence citations."}
+  ]
+}

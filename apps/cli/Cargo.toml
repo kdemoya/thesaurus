@@ -1,0 +1,36 @@
+[package]
+name = "thesaurus"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+default-run = "thesaurus"
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+reqwest.workspace = true
+thesaurus-contracts.workspace = true
+thesaurus-core.workspace = true
+thesaurus-client.workspace = true
+thesaurus-mcp.workspace = true
+axum = { version = "0.8.9", features = ["json"] }
+tower-http = { version = "0.6", features = ["fs", "limit", "set-header"] }
+clap = { version = "4", features = ["derive", "env"] }
+fs2 = "0.4"
+futures-util = "0.3"
+async-stream = "0.3"
+chrono = "0.4"
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "sqlite"] }
+subtle = "2"
+libc = "0.2"
+uuid = { version = "1", features = ["v4"] }
+base64 = "0.22"
+sha2 = "0.10"
+regex = "1"
+
+[dev-dependencies]
+tempfile = "3"
+tower = { version = "0.5", features = ["util"] }

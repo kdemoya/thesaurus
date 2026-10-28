@@ -1,0 +1,31 @@
+[workspace]
+members = ["crates/contracts", "crates/core", "crates/client", "crates/mcp", "crates/plugin-sdk", "apps/cli", "apps/ui", "apps/desktop/src-tauri"]
+default-members = ["apps/cli"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "MIT"
+repository = "https://github.com/kdemoya/thesaurus"
+
+[workspace.dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream", "multipart"] }
+thesaurus-contracts = { path = "crates/contracts" }
+thesaurus-core = { path = "crates/core" }
+thesaurus-client = { path = "crates/client" }
+thesaurus-mcp = { path = "crates/mcp" }
+thesaurus-plugin-sdk = { path = "crates/plugin-sdk" }
+
+[profile.dev]
+debug = 0
+incremental = false
+
+[profile.release]
+strip = true
+lto = "thin"

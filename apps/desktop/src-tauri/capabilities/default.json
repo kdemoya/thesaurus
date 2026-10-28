@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Local app events and the scoped service bridge",
+  "windows": ["main", "companion", "meeting-popover", "recovery"],
+  "permissions": ["core:default"]
+}

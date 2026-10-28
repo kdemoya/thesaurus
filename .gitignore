@@ -1,0 +1,17 @@
+/target/
+/.tools/
+/.local/
+/apps/ui/dist/
+/apps/desktop/src-tauri/resources/
+*.sqlite*
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.p12
+*.pfx
+*.keychain-db
+*.mobileprovision
+/apps/desktop/src-tauri/gen/
+/.impeccable/review/

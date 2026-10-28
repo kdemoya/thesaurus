@@ -1,0 +1,53 @@
+{
+  "id": "example.native-notification",
+  "name": "Transcript follow-up notifications",
+  "version": "1.0.0",
+  "api_min": 2,
+  "api_max": 2,
+  "host": "service",
+  "description": "Requests a local notification for selected transcript follow-ups, using exact native command grants. Never requests OS permission.",
+  "hooks": [
+    "document.revision.created"
+  ],
+  "requests": [
+    "sources.read",
+    "commands.invoke",
+    "native.notifications.show",
+    "native.notifications.dismiss"
+  ],
+  "contributions": [
+    {
+      "id": "notify",
+      "kind": "command",
+      "title": "Request follow-up notification",
+      "description": "Request only this plugin installation\u2019s local notification through the host broker; inspect the native receipt for completion."
+    },
+    {
+      "id": "dismiss",
+      "kind": "command",
+      "title": "Dismiss this plugin's notification",
+      "description": "Request only this plugin installation\u2019s local notification through the host broker; inspect the native receipt for completion."
+    }
+  ],
+  "setup": [
+    {
+      "id": "notification-provider",
+      "title": "Connected notification provider",
+      "description": "Requires a connected desktop provider. OS authorization is checked on invocation and must be configured separately.",
+      "applies_to": [
+        "notify",
+        "dismiss"
+      ],
+      "prerequisites": [
+        {
+          "kind": "capability",
+          "capability": "native.notifications"
+        }
+      ],
+      "repair": {
+        "kind": "feature",
+        "feature": "notifications"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Thesaurus",
+  "version": "0.1.0",
+  "identifier": "dev.thesaurus.desktop",
+  "build": {
+    "frontendDist": "../../ui/dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "create": false,
+        "title": "Thesaurus",
+        "width": 1320,
+        "height": 900,
+        "minWidth": 920,
+        "minHeight": 640
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; connect-src 'self' ipc: http://ipc.localhost; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "category": "Productivity",
+    "shortDescription": "Your work, in context",
+    "macOS": {
+      "minimumSystemVersion": "12.0",
+      "infoPlist": "Info.plist"
+    },
+    "resources": [
+      "resources/thesaurus",
+      "resources/thesaurus-audio",
+      "resources/transcription/",
+      "resources/web/"
+    ]
+  }
+}
