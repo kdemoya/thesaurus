@@ -13,5 +13,7 @@
 *.pfx
 *.keychain-db
 *.mobileprovision
+__pycache__/
+*.py[cod]
 /apps/desktop/src-tauri/gen/
 /.impeccable/review/

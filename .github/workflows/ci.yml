@@ -44,8 +44,16 @@ jobs:
           persist-credentials: false
       - name: Install pinned build tools
         run: ./scripts/bootstrap.sh
+      - name: Install packaging Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
       - name: Check formatting
         run: ./scripts/cargo.sh fmt --all -- --check
+      - name: Check macOS distribution safeguards
+        run: |
+          python3 scripts/test-macos-distribution.py
+          python3 scripts/test-macos-packaging.py
       - name: Test service, shared crates, and plugin examples
         run: >-
           ./scripts/cargo.sh test --locked --all-targets

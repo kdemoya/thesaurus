@@ -41,6 +41,7 @@ macOS is the first desktop target. Install Xcode Command Line Tools. The bootstr
 ```sh
 ./scripts/bootstrap.sh
 ./scripts/build-audio.sh debug
+./scripts/build-ocr.sh debug
 ./scripts/build-transcription.sh debug
 ./scripts/build-web.sh --release
 ./scripts/cargo.sh build --locked -p thesaurus
@@ -74,7 +75,9 @@ The packaging script requires Node/npm for the pinned Tauri build tool; the inst
 ./scripts/build-desktop.sh --debug
 ```
 
-Open `target/debug/bundle/macos/Thesaurus.app`. It bundles the service and browser assets, starts the service when necessary, and shares data with the browser. To use the development workspace, launch with `THESAURUS_DATA_DIR` set; see [development](docs/development.md). For an optimized local bundle use `--release`. Signing and notarization are not configured.
+Open `target/debug/bundle/macos/Thesaurus.app`. It bundles the service and browser assets, starts the service when necessary, and shares data with the browser. To use the development workspace, launch with `THESAURUS_DATA_DIR` set; see [development](docs/development.md). For an optimized local bundle use `--release --local`. Public distribution requires an explicitly configured Developer ID identity and notarization profile.
+
+Build a local alpha DMG with `python3 scripts/package-macos.py`. See [macOS alpha builds](docs/macos-alpha-build.md) for local and Developer ID packaging, and [installation](docs/macos-alpha-install.md) for the acceptance checklist. Local artifacts are not notarized for public distribution.
 
 ## Connect an existing agent
 

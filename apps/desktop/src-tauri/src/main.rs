@@ -1,4 +1,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+mod notices;
 mod plugins;
 mod service;
 use serde_json::{Value, json};
@@ -59,6 +60,7 @@ fn main() {
                 recovery: Default::default(),
             });
             app.manage(data);
+            notices::install(app.handle())?;
             plugins::install(app)?;
             let handle = app.handle().clone();
             tauri::async_runtime::spawn(async move {

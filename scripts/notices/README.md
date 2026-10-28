@@ -1,0 +1,13 @@
+# Notice generation inputs
+
+`../build-notices.sh [debug|release]` generates the complete directory copied into the app's `Resources/notices/`. It needs Python 3.11 or newer and the Cargo/native dependencies fetched by the desktop build. It downloads the pinned cargo-about 0.9.1 Apple Silicon binary, verifies the release's SHA-256, and harvests license data offline. Other build hosts install that exact version with Cargo's locked dependency graph.
+
+`about.toml` lists the reviewed license choices. It retains build dependencies because generated code can enter the distributed artifact, excludes dev dependencies, and filters the graph to the native macOS and browser WASM targets. The result is deliberately a superset of code linked into the app.
+
+`upstream.json` records supplemental notices omitted from published crate archives. Each file in `upstream/` retains its upstream text and has an immutable source URL and SHA-256. The generator checks the published package's recorded VCS commit against the inventory. `review_note` explains exceptions, including unavailable Leptos VCS commits and packages that publish a license declaration without a standalone license file. Those exact source archives and original authors/license metadata are retained in the output; no replacement copyright holder is invented. The Leptos exceptions additionally retain the identical project's MIT notice from a retrievable release commit.
+
+When updating dependencies, regenerate and review the selected licenses, upstream notice provenance, native support code and source obligations. New crates without original notice text fail unless a reviewed entry is added. A package containing modified MPL source fails generation until the corresponding modified source delivery is implemented; the current build distributes unchanged source archives.
+
+The output contains `LICENSE.txt`, readable `index.html`, `inventory.json`, selected full license texts in `rust-licenses.json`, original files under `licenses/`, exact MPL source archives and supplemental source archives under `sources/`, and `checksums.json`. The checksum manifest covers every other generated file. The Rust runtime's own copyright inventory is included in addition to Cargo dependencies. The pinned whisper.cpp source archive preserves the bundled native header notices for miniaudio, stb_vorbis, nlohmann/json, ggml and llamafile.
+
+This inventory records distribution inputs and retained notices. It is not a legal certification of every upstream license declaration. In particular, retain and review the MCP SDK's upstream MIT-to-Apache transition notice and objc2's Apple SDK explanation when changing distribution scope.

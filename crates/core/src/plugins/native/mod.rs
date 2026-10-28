@@ -204,11 +204,7 @@ impl CapabilityProvider for Ocr {
         )
     }
     fn health(&self) -> Result<()> {
-        if cfg!(target_os = "macos") {
-            Ok(())
-        } else {
-            bail!("unsupported: macOS OCR provider is unavailable on this platform")
-        }
+        screen::ocr_helper_path().map(|_| ())
     }
     fn invoke<'a>(&'a self, command: &'a str, input: Value) -> ProviderFuture<'a> {
         Box::pin(async move {

@@ -27,7 +27,7 @@ Rust is pinned in `rust-toolchain.toml`. `scripts/bootstrap.sh` installs project
 ./scripts/build-desktop.sh --debug
 ```
 
-The desktop script builds the web assets, replaces the generated web resource directory to remove obsolete hashed bundles, copies the service and assets into ignored bundle resources, then invokes the pinned Tauri CLI. The debug app includes optimized web assets and a debug Rust executable. Bundles are unsigned local builds. The Tauri CLI is installed under `.tools/tauri` through npm, with its cache under `.tools/npm-cache`.
+The desktop script builds the web assets, replaces the generated web resource directory to remove obsolete hashed bundles, copies the service and assets into ignored bundle resources, then invokes the pinned Tauri CLI. The debug app includes optimized web assets and a debug Rust executable. Bundles use local signing by default; Developer ID signing and notarization require explicit distribution configuration. See [macOS alpha builds](macos-alpha-build.md). The Tauri CLI is installed under `.tools/tauri` through npm, with its cache under `.tools/npm-cache`.
 
 To run the desktop binary against the same synthetic workspace as the browser:
 
