@@ -54,6 +54,12 @@ jobs:
         run: |
           python3 scripts/test-macos-distribution.py
           python3 scripts/test-macos-packaging.py
+      - name: Check interface behavior
+        run: |
+          RUSTUP_HOME="$PWD/.tools/rustup" CARGO_HOME="$PWD/.tools/cargo" .tools/cargo/bin/rustc --edition 2024 --test apps/ui/src/bragbook_review_state.rs -o "$RUNNER_TEMP/thesaurus-review-state-tests"
+          "$RUNNER_TEMP/thesaurus-review-state-tests"
+          node scripts/test-dialogs.mjs
+          node --test scripts/test-recovery.cjs
       - name: Test service, shared crates, and plugin examples
         run: >-
           ./scripts/cargo.sh test --locked --all-targets

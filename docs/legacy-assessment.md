@@ -2,15 +2,17 @@
 
 Assessment date: October 16, 2026.
 
+The legacy source files described here are not included in this repository; the assessment is retained as historical context.
+
 The three directories preserve useful product behavior and extensive test cases, but the available files do not form a complete runnable application. Thesaurus should carry forward their workflows, provenance rules, and recovery requirements while building a Rust service that also owns ingestion and continuous analysis.
 
 ## Directory inventory
 
 | Directory | Available evidence | Implication |
 | --- | --- | --- |
-| `~/Projects/work-agent-dashboard` | README, stylesheet, CLI and server tests, package initializer, and a Git index listing additional paths. | Baseline dashboard behavior and local security requirements. |
-| `~/Projects/work-agent-dashboard-context` | Expanded README, 594 line HTTP server, 234 line Herdr adapter, HTML, context/Garden/implementation/server tests, retention and refresh scripts, and an earlier reuse plan. | Broadest specification of context ingestion, idea workflows, automation, and recovery. |
-| `~/Projects/work-agent-dashboard-people` | 1,407 line JavaScript frontend, stylesheet, people/integration/server/frontend tests, package initializer, and retention script. | People attribution, evidence viewing, interaction patterns, and integration health behavior. |
+| `work-agent-dashboard` | README, stylesheet, CLI and server tests, package initializer, and a Git index listing additional paths. | Baseline dashboard behavior and local security requirements. |
+| `work-agent-dashboard-context` | Expanded README, 594 line HTTP server, 234 line Herdr adapter, HTML, context/Garden/implementation/server tests, retention and refresh scripts, and an earlier reuse plan. | Broadest specification of context ingestion, idea workflows, automation, and recovery. |
+| `work-agent-dashboard-people` | 1,407 line JavaScript frontend, stylesheet, people/integration/server/frontend tests, package initializer, and retention script. | People attribution, evidence viewing, interaction patterns, and integration health behavior. |
 
 The base directory's Git status reports staged additions with working tree modifications and deletions. Its current branch has no commits. A direct object lookup for the indexed `store.py` blob fails, so index entries alone do not establish that the missing source is recoverable. Neither sibling directory contains a top level `.git` entry in the inspected listing.
 
@@ -24,7 +26,7 @@ The baseline README describes open/completed/overdue actions, meeting digests, o
 
 The people frontend adds a command palette, keyboard action selection, a context inbox, people profiles, source links, highlighted conversation excerpts, and separate operational refreshes. These are useful interaction requirements for the new interface.
 
-Evidence: [baseline README](../../work-agent-dashboard/README.md), [people frontend](../../work-agent-dashboard-people/static/app.js), and [frontend expectations](../../work-agent-dashboard-context/tests/test_frontend.py).
+Evidence: baseline README, people frontend, and frontend expectations.
 
 ### HTTP and update lifecycle
 
@@ -32,7 +34,7 @@ The available server uses Python `ThreadingHTTPServer`, a source signature watch
 
 The interface is therefore live with respect to source changes, while intelligence production depends on separate processing workflows. A Rust port of only this server would preserve that dependency.
 
-Evidence: [server](../../work-agent-dashboard-context/work_agent_dashboard/server.py), particularly `DashboardHTTPServer`, `_watch_events`, `_watch_ideas`, `_watch_implementations`, and `_serve_events`.
+Evidence: server, particularly `DashboardHTTPServer`, `_watch_events`, `_watch_ideas`, `_watch_implementations`, and `_serve_events`.
 
 ### Context ingestion
 
@@ -40,7 +42,7 @@ The context README and tests specify URL classification, canonicalization, dedup
 
 The distinction between raw capture and durable interpretation should remain. Queue state and retention references should move into transactional storage, with compatibility importers for the existing Markdown envelopes.
 
-Evidence: [context documentation](../../work-agent-dashboard-context/README.md), [context cases](../../work-agent-dashboard-context/tests/test_contexts.py), and [CLI expectations](../../work-agent-dashboard-context/tests/test_context_cli.py). The implementing context module is absent.
+Evidence: context documentation, context cases, and CLI expectations. The implementing context module is absent.
 
 ### Company knowledge
 
@@ -48,7 +50,7 @@ The context README describes a private SQLite/FTS5 Garden cache populated from a
 
 Preserve repository revisions, frontmatter, freshness, and targeted retrieval. Establish a new relevance baseline before adding embeddings.
 
-Evidence: [Garden documentation](../../work-agent-dashboard-context/README.md), [dashboard expectations](../../work-agent-dashboard-context/tests/test_garden_dashboard.py), and [Garden CLI expectations](../../work-agent-dashboard-context/tests/test_garden_cli.py). The Garden implementation modules are absent.
+Evidence: Garden documentation, dashboard expectations, and Garden CLI expectations. The Garden implementation modules are absent.
 
 ### People and ownership
 
@@ -56,7 +58,7 @@ People tests specify editable profiles, stable IDs, exact names and unique alias
 
 Carry forward explicit identity mappings and evidence dates. A speaker labeled “Them” should not become an inferred coworker identity.
 
-Evidence: [people cases](../../work-agent-dashboard-people/tests/test_people.py) and [people interface](../../work-agent-dashboard-people/static/app.js). The profile parser is absent.
+Evidence: people cases and people interface. The profile parser is absent.
 
 ### Ideas and execution
 
@@ -64,7 +66,7 @@ The context README and implementation tests describe priority topics, idea dismi
 
 The surviving Herdr adapter validates response shapes and session identity and invokes the CLI with argv arrays. It is useful evidence for a future external execution adapter. Recreating autonomous coding should follow a useful ingestion and suggestion release because it introduces a large independent workflow.
 
-Evidence: [workflow documentation](../../work-agent-dashboard-context/README.md), [implementation cases](../../work-agent-dashboard-context/tests/test_idea_implementer.py), and [Herdr adapter](../../work-agent-dashboard-context/work_agent_dashboard/herdr_runner.py). The planner and implementer modules are absent.
+Evidence: workflow documentation, implementation cases, and Herdr adapter. The planner and implementer modules are absent.
 
 ### Integration health
 
@@ -72,7 +74,7 @@ Integration tests specify bounded caching, asynchronous cold probes, normalized 
 
 Thesaurus should maintain its own MCP sessions and separately report configured, authenticated, connected, and last successful operation states. Optional telemetry should appear only when a provider reports it.
 
-Evidence: [integration cases](../../work-agent-dashboard-people/tests/test_integrations.py), [frontend expectations](../../work-agent-dashboard-context/tests/test_frontend.py), and the context README. The integration monitor module is absent.
+Evidence: integration cases, frontend expectations, and the context README. The integration monitor module is absent.
 
 ## Migration decisions
 
@@ -98,7 +100,7 @@ Implement these requirements as shared policy in the Rust service so both interf
 
 ## Earlier plan
 
-The [September reuse plan](../../work-agent-dashboard-context/.hermes/plans/2026-09-02_111106-reusable-configurable-dashboard.md) proposes provider contracts, configuration, normalized records, capability-driven navigation, and optional automation adapters. Those architectural ideas remain useful.
+The September reuse plan proposes provider contracts, configuration, normalized records, capability-driven navigation, and optional automation adapters. Those architectural ideas remain useful.
 
 Its implementation assumes a complete Python project and includes historical line counts, dirty-state counts, and estimates. Those figures are not the current baseline. The Rust plan replaces its Python packaging and extraction phases with a new shared runtime, transactional ingestion, and a desktop shell.
 

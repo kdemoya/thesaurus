@@ -127,11 +127,11 @@ pub(super) fn show(app: &tauri::AppHandle, mode: &str) -> Result<(), String> {
             app,
             "companion",
             WebviewUrl::App(
-                if setup {
+                (if setup {
                     "index.html?companion=1&setup=1"
                 } else {
                     "index.html?companion=1"
-                }
+                })
                 .into(),
             ),
         )

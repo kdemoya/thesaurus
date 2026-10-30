@@ -70,3 +70,9 @@ The optimized Apple Silicon app builds and passes strict nested signature checks
 The local DMG verifies, mounts read-only, contains the app, Applications shortcut, install guide and notice bundle, and detaches after the copied-app test. The app copy passes all resource checks and 29 synthetic service checks: import/search, source scopes, cited Bragbook candidates, review, accepted-only export, private export permissions, deduplication, graceful shutdown and restart persistence. The test uses a disposable workspace and does not open the desktop UI or touch the owner's workspace.
 
 Rust checks: 106 passed, one opt-in Keychain test skipped. Signing and packaging safeguards: 46 Python tests passed. Formatting, shell syntax, workflow validation, notice hashes and source secret scanning pass. Hosted workflow execution and fresh-machine/native-device acceptance remain pending. The local artifact is not Developer ID signed or notarized; it is not approved for public distribution.
+
+## Public-repository preparation — October 29, 2026
+
+The README was rewritten around the product, source-build path, trust boundaries and current alpha limitations. A disposable workspace passed CLI initialization, service startup, import, search and context assembly. The full two-commit history and the current nonignored publication candidates passed a redacted Gitleaks scan. The service/shared/SDK test suite passed with the opt-in Keychain test skipped; the review state, dialog and recovery checks were added to CI. Formatting, workflow lint, distribution safeguards and README relative-link checks passed locally.
+
+These checks cover the working tree as reviewed, including uncommitted changes; they do not verify a future commit or a hosted CI run. A repository remote has not yet been configured. The owner review and the remaining acceptance and distribution gates above still apply.

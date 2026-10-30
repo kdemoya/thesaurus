@@ -16,4 +16,11 @@
 __pycache__/
 *.py[cod]
 /apps/desktop/src-tauri/gen/
+# Local Impeccable sessions, generated reviews, and preview-only notes.
+/.impeccable/build/
+/.impeccable/live/
+/.impeccable/mocks/
 /.impeccable/review/
+/.impeccable/config.local.json
+/.impeccable/critique/*
+!/.impeccable/critique/ignore.md

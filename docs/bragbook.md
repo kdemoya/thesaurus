@@ -10,7 +10,9 @@ Candidates come from recorded task completions, explicitly confirmed delivery co
 
 Each candidate retains its origin, collection time and exact source revision, line and quote. Source markers have no inferred accomplishment date. Existing task completions receive a date only when a recorded completion transition supplies one; migration baselines do not establish earlier dates. Dates use UTC.
 
-In **To review**, inspect the evidence, edit the accomplishment and your contribution, and optionally add impact and an accomplishment date. Choose **Accept for my bragbook**, confirm your review, and select **Accept entry**. You can also keep a candidate or dismiss it. Accepted and dismissed entries remain editable; dismissed entries can return to review.
+In **To review**, inspect the evidence, edit the accomplishment and your contribution, and optionally add impact and an accomplishment date. Confirm your review and select **Accept entry**. You can also save a candidate for later or dismiss it. Accepted and dismissed entries remain editable; dismissed entries can return to review.
+
+Review one candidate at a time. Unsaved edits stay in the current window as you navigate, using session storage when available and in-memory storage otherwise. They are not saved to the service until you save or accept the entry, and they are not a backup across windows. If a candidate changes while you have a draft, compare it with the saved record before continuing.
 
 Repeated scans preserve reviews. Identical markers in the same document are deduplicated across line moves and revisions. A task and a delivery linked to that task share one collection identity. This is identity-based deduplication; similar wording in different sources is not automatically merged.
 

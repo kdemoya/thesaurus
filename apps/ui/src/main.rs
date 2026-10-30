@@ -2,10 +2,13 @@ mod actions;
 mod annotations;
 mod audio_settings;
 mod bragbook;
+mod bragbook_review;
+mod bragbook_review_state;
 mod briefs;
 mod capture;
 mod context_delivery;
 mod delivery;
+mod dialog_manager;
 mod discovery;
 mod dot_type;
 mod evaluations;
@@ -17,6 +20,7 @@ mod live_meetings;
 mod meeting_summaries;
 mod meetings;
 mod memory_review;
+mod mobile_navigation;
 mod native_notifications;
 mod onboarding;
 mod plugin_action_review;
@@ -219,6 +223,10 @@ fn focused_task(snap: Option<Snapshot>, selected: Option<String>) -> Option<Task
 fn App() -> impl IntoView {
     let snap = RwSignal::new(None::<Snapshot>);
     let notice = RwSignal::new(String::new());
+    bragbook_review::provide_drafts();
+    provide_context(bragbook_review::ReviewNotice(notice));
+    dialog_manager::initialize(true);
+    on_cleanup(|| dialog_manager::initialize(false));
     let view = RwSignal::new(
         if live_meetings::is_companion() {
             "companion"
@@ -359,13 +367,14 @@ fn App() -> impl IntoView {
             notice.set(e)
         }
     });
-    let open_import = move |_| {
+    let start_import = move || {
         title.set(String::new());
         body.set(String::new());
         uri.set(String::new());
         external.set(false);
         importing.set(true);
     };
+    let open_import = move |_| start_import();
     let submit_import = move |ev: leptos::ev::SubmitEvent| {
         ev.prevent_default();
         if saving.get_untracked() {
@@ -443,19 +452,31 @@ fn App() -> impl IntoView {
     };
     // Match terminal navigation without intercepting typing or browser shortcuts.
     let keys = Closure::<dyn Fn(web_sys::KeyboardEvent)>::new(move |ev: web_sys::KeyboardEvent| {
+        if ev.key() == "Escape" && !(ev.ctrl_key() || ev.meta_key() || ev.alt_key()) {
+            theme_open.set(false);
+            importing.set(false);
+            selected.set(None);
+            help.set(false);
+            return;
+        }
+        // A native modal drawer makes the page inert, but keydown still bubbles
+        // to Window. Let its own controls and Escape handling own this task.
+        if web_sys::window()
+            .and_then(|w| w.document())
+            .and_then(|d| d.get_element_by_id("mobile-navigation-dialog"))
+            .is_some_and(|dialog| dialog.has_attribute("open"))
+        {
+            if ev.meta_key() && ev.key() == "," {
+                ev.prevent_default();
+            }
+            return;
+        }
         if ev.meta_key() && ev.key() == "," {
             ev.prevent_default();
             view.set("settings".into());
             return;
         }
         if ev.ctrl_key() || ev.meta_key() || ev.alt_key() {
-            return;
-        }
-        if ev.key() == "Escape" {
-            theme_open.set(false);
-            importing.set(false);
-            selected.set(None);
-            help.set(false);
             return;
         }
         let typing = ev
@@ -560,6 +581,7 @@ fn App() -> impl IntoView {
                 </div>
             </header>
             <div class="workspace-body">
+            <Show when=move||snap.get().is_some()><mobile_navigation::MobileNavigation view=view hits=hits open_capture=Callback::new(move |_| start_import()) open_theme=Callback::new(move |_| theme_open.set(true))/></Show>
             <capture::ActivityIndicator snap=snap notice=notice/><live_meetings::MeetingIndicator snap=snap notice=notice/><div class="main-shell">
                 <main class:settings-view=move||view.get()=="settings">
                     <Show when=move||!notice.get().is_empty()><div class="notice" role="alert"><span>{move||notice.get()}</span><button aria-label="Dismiss notice" on:click=move|_|notice.set(String::new())>"×"</button></div></Show>
@@ -634,7 +656,7 @@ fn App() -> impl IntoView {
                         <Show when=move||view.get()=="evaluations"><evaluations::Evaluations snap=snap notice=notice/></Show>
                         <Show when=move||view.get()=="settings"><settings::Settings snap=snap notice=notice section=section view=view theme_open=theme_open/></Show>
                         <Show when=move||view.get()=="plugins"><plugins::Plugins snap=snap notice=notice view=view section=section/></Show>
-                        <Show when=move||view.get()=="bragbook"><bragbook::Bragbook snap=snap notice=notice section=section/></Show>
+                        <Show when=move||view.get()=="bragbook"><Show when=move||section.get()=="candidate" fallback=move||view!{<bragbook::Bragbook snap=snap notice=notice section=section/>}><bragbook_review::ReviewQueue snap=snap/></Show></Show>
                         <Show when=move||view.get()=="connections">
                             <div hidden=move||section.get()!="usage"><usage_controls::UsageControls snap=snap notice=notice view=view/></div>
                             <div hidden=move||section.get()!="agent"><RuntimeSetup snap=snap notice=notice view=view/></div>

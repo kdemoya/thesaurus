@@ -1,0 +1,1934 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T02:47:42.448319+00:00",
+  "title": "Design System: Thesaurus",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "displayName": "Violet Charcoal",
+        "tonalRamp": [
+          "oklch(15.000000% 0.011569 284.415157)",
+          "oklch(26.428571% 0.020383 284.415157)",
+          "oklch(37.857143% 0.023137 284.415157)",
+          "oklch(49.285714% 0.023137 284.415157)",
+          "oklch(60.714286% 0.023137 284.415157)",
+          "oklch(72.142857% 0.021485 284.415157)",
+          "oklch(83.571429% 0.012670 284.415157)",
+          "oklch(95.000000% 0.003856 284.415157)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 15,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "ink": {
+        "displayName": "Pale Ink",
+        "tonalRamp": [
+          "oklch(15.000000% 0.008354 297.479767)",
+          "oklch(26.428571% 0.014718 297.479767)",
+          "oklch(37.857143% 0.016707 297.479767)",
+          "oklch(49.285714% 0.016707 297.479767)",
+          "oklch(60.714286% 0.016707 297.479767)",
+          "oklch(72.142857% 0.015514 297.479767)",
+          "oklch(83.571429% 0.009149 297.479767)",
+          "oklch(95.000000% 0.002785 297.479767)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 16,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "muted": {
+        "displayName": "Muted Lilac",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015131 294.379964)",
+          "oklch(26.428571% 0.026660 294.379964)",
+          "oklch(37.857143% 0.030263 294.379964)",
+          "oklch(49.285714% 0.030263 294.379964)",
+          "oklch(60.714286% 0.030263 294.379964)",
+          "oklch(72.142857% 0.028101 294.379964)",
+          "oklch(83.571429% 0.016573 294.379964)",
+          "oklch(95.000000% 0.005044 294.379964)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 17,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "dim": {
+        "displayName": "Dim Lilac",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015131 294.379964)",
+          "oklch(26.428571% 0.026660 294.379964)",
+          "oklch(37.857143% 0.030263 294.379964)",
+          "oklch(49.285714% 0.030263 294.379964)",
+          "oklch(60.714286% 0.030263 294.379964)",
+          "oklch(72.142857% 0.028101 294.379964)",
+          "oklch(83.571429% 0.016573 294.379964)",
+          "oklch(95.000000% 0.005044 294.379964)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 18,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "line": {
+        "displayName": "Fine Slate",
+        "tonalRamp": [
+          "oklch(15.000000% 0.022063 282.792280)",
+          "oklch(26.428571% 0.038872 282.792280)",
+          "oklch(37.857143% 0.044126 282.792280)",
+          "oklch(49.285714% 0.044126 282.792280)",
+          "oklch(60.714286% 0.044126 282.792280)",
+          "oklch(72.142857% 0.040974 282.792280)",
+          "oklch(83.571429% 0.024164 282.792280)",
+          "oklch(95.000000% 0.007354 282.792280)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 19,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "row": {
+        "displayName": "Row Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.016421 286.633731)",
+          "oklch(26.428571% 0.028933 286.633731)",
+          "oklch(37.857143% 0.032843 286.633731)",
+          "oklch(49.285714% 0.032843 286.633731)",
+          "oklch(60.714286% 0.032843 286.633731)",
+          "oklch(72.142857% 0.030497 286.633731)",
+          "oklch(83.571429% 0.017985 286.633731)",
+          "oklch(95.000000% 0.005474 286.633731)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 20,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "selected": {
+        "displayName": "Selected Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.020858 289.733700)",
+          "oklch(26.428571% 0.036750 289.733700)",
+          "oklch(37.857143% 0.041716 289.733700)",
+          "oklch(49.285714% 0.041716 289.733700)",
+          "oklch(60.714286% 0.041716 289.733700)",
+          "oklch(72.142857% 0.038737 289.733700)",
+          "oklch(83.571429% 0.022845 289.733700)",
+          "oklch(95.000000% 0.006953 289.733700)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 21,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "orange": {
+        "displayName": "Warm Apricot",
+        "tonalRamp": [
+          "oklch(15.000000% 0.038634 51.884727)",
+          "oklch(26.428571% 0.068069 51.884727)",
+          "oklch(37.857143% 0.097504 51.884727)",
+          "oklch(49.285714% 0.126939 51.884727)",
+          "oklch(60.714286% 0.136241 51.884727)",
+          "oklch(72.142857% 0.126510 51.884727)",
+          "oklch(83.571429% 0.074608 51.884727)",
+          "oklch(95.000000% 0.022707 51.884727)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 22,
+          "selector": ":root"
+        },
+        "role": "primary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "violet": {
+        "displayName": "Soft Lavender",
+        "tonalRamp": [
+          "oklch(15.000000% 0.064619 300.380360)",
+          "oklch(26.428571% 0.113852 300.380360)",
+          "oklch(37.857143% 0.129238 300.380360)",
+          "oklch(49.285714% 0.129238 300.380360)",
+          "oklch(60.714286% 0.129238 300.380360)",
+          "oklch(72.142857% 0.120006 300.380360)",
+          "oklch(83.571429% 0.070773 300.380360)",
+          "oklch(95.000000% 0.021540 300.380360)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 23,
+          "selector": ":root"
+        },
+        "role": "secondary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "cyan": {
+        "displayName": "Source Cyan",
+        "tonalRamp": [
+          "oklch(15.000000% 0.025799 208.194054)",
+          "oklch(26.428571% 0.045455 208.194054)",
+          "oklch(37.857143% 0.065111 208.194054)",
+          "oklch(49.285714% 0.072795 208.194054)",
+          "oklch(60.714286% 0.072795 208.194054)",
+          "oklch(72.142857% 0.067596 208.194054)",
+          "oklch(83.571429% 0.039864 208.194054)",
+          "oklch(95.000000% 0.012133 208.194054)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 24,
+          "selector": ":root"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "green": {
+        "displayName": "Ready Sage",
+        "tonalRamp": [
+          "oklch(15.000000% 0.041372 131.591587)",
+          "oklch(26.428571% 0.072893 131.591587)",
+          "oklch(37.857143% 0.089066 131.591587)",
+          "oklch(49.285714% 0.089066 131.591587)",
+          "oklch(60.714286% 0.089066 131.591587)",
+          "oklch(72.142857% 0.082704 131.591587)",
+          "oklch(83.571429% 0.048774 131.591587)",
+          "oklch(95.000000% 0.014844 131.591587)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 25,
+          "selector": ":root"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "on-accent": {
+        "displayName": "Accent Contrast",
+        "tonalRamp": [
+          "oklch(15.000000% 0.011704 288.087210)",
+          "oklch(26.428571% 0.020621 288.087210)",
+          "oklch(37.857143% 0.023408 288.087210)",
+          "oklch(49.285714% 0.023408 288.087210)",
+          "oklch(60.714286% 0.023408 288.087210)",
+          "oklch(72.142857% 0.021736 288.087210)",
+          "oklch(83.571429% 0.012818 288.087210)",
+          "oklch(95.000000% 0.003901 288.087210)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 26,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "surface": {
+        "displayName": "Raised Charcoal",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015689 286.782204)",
+          "oklch(26.428571% 0.027643 286.782204)",
+          "oklch(37.857143% 0.031378 286.782204)",
+          "oklch(49.285714% 0.031378 286.782204)",
+          "oklch(60.714286% 0.031378 286.782204)",
+          "oklch(72.142857% 0.029137 286.782204)",
+          "oklch(83.571429% 0.017183 286.782204)",
+          "oklch(95.000000% 0.005230 286.782204)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 27,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "recessed": {
+        "displayName": "Recessed Ink",
+        "tonalRamp": [
+          "oklch(15.000000% 0.008816 284.807567)",
+          "oklch(26.428571% 0.015532 284.807567)",
+          "oklch(37.857143% 0.017631 284.807567)",
+          "oklch(49.285714% 0.017631 284.807567)",
+          "oklch(60.714286% 0.017631 284.807567)",
+          "oklch(72.142857% 0.016372 284.807567)",
+          "oklch(83.571429% 0.009655 284.807567)",
+          "oklch(95.000000% 0.002939 284.807567)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 28,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "line-soft": {
+        "displayName": "Quiet Divider",
+        "tonalRamp": [
+          "oklch(15.000000% 0.019973 286.085862)",
+          "oklch(26.428571% 0.035190 286.085862)",
+          "oklch(37.857143% 0.039945 286.085862)",
+          "oklch(49.285714% 0.039945 286.085862)",
+          "oklch(60.714286% 0.039945 286.085862)",
+          "oklch(72.142857% 0.037092 286.085862)",
+          "oklch(83.571429% 0.021875 286.085862)",
+          "oklch(95.000000% 0.006658 286.085862)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 29,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "hover": {
+        "displayName": "Hover Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.017628 288.848685)",
+          "oklch(26.428571% 0.031059 288.848685)",
+          "oklch(37.857143% 0.035256 288.848685)",
+          "oklch(49.285714% 0.035256 288.848685)",
+          "oklch(60.714286% 0.035256 288.848685)",
+          "oklch(72.142857% 0.032738 288.848685)",
+          "oklch(83.571429% 0.019307 288.848685)",
+          "oklch(95.000000% 0.005876 288.848685)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 30,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "notice-bg": {
+        "displayName": "Notice Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.006755 25.428987)",
+          "oklch(26.428571% 0.011901 25.428987)",
+          "oklch(37.857143% 0.013509 25.428987)",
+          "oklch(49.285714% 0.013509 25.428987)",
+          "oklch(60.714286% 0.013509 25.428987)",
+          "oklch(72.142857% 0.012544 25.428987)",
+          "oklch(83.571429% 0.007398 25.428987)",
+          "oklch(95.000000% 0.002252 25.428987)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 33,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "overlay": {
+        "displayName": "Dialog Veil",
+        "tonalRamp": [
+          "oklch(15.000000% 0.010251 284.127530 / 0.800000)",
+          "oklch(26.428571% 0.018062 284.127530 / 0.800000)",
+          "oklch(37.857143% 0.020503 284.127530 / 0.800000)",
+          "oklch(49.285714% 0.020503 284.127530 / 0.800000)",
+          "oklch(60.714286% 0.020503 284.127530 / 0.800000)",
+          "oklch(72.142857% 0.019038 284.127530 / 0.800000)",
+          "oklch(83.571429% 0.011228 284.127530 / 0.800000)",
+          "oklch(95.000000% 0.003417 284.127530 / 0.800000)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 34,
+          "selector": ":root"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-bg": {
+        "displayName": "Midnight · Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015963 254.886542)",
+          "oklch(26.428571% 0.028125 254.886542)",
+          "oklch(37.857143% 0.031925 254.886542)",
+          "oklch(49.285714% 0.031925 254.886542)",
+          "oklch(60.714286% 0.031925 254.886542)",
+          "oklch(72.142857% 0.029645 254.886542)",
+          "oklch(83.571429% 0.017483 254.886542)",
+          "oklch(95.000000% 0.005321 254.886542)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 42,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-ink": {
+        "displayName": "Midnight · Ink",
+        "tonalRamp": [
+          "oklch(15.000000% 0.011514 252.180585)",
+          "oklch(26.428571% 0.020287 252.180585)",
+          "oklch(37.857143% 0.023029 252.180585)",
+          "oklch(49.285714% 0.023029 252.180585)",
+          "oklch(60.714286% 0.023029 252.180585)",
+          "oklch(72.142857% 0.021384 252.180585)",
+          "oklch(83.571429% 0.012611 252.180585)",
+          "oklch(95.000000% 0.003838 252.180585)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 42,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-muted": {
+        "displayName": "Midnight · Muted",
+        "tonalRamp": [
+          "oklch(15.000000% 0.018134 256.360393)",
+          "oklch(26.428571% 0.031951 256.360393)",
+          "oklch(37.857143% 0.036269 256.360393)",
+          "oklch(49.285714% 0.036269 256.360393)",
+          "oklch(60.714286% 0.036269 256.360393)",
+          "oklch(72.142857% 0.033678 256.360393)",
+          "oklch(83.571429% 0.019861 256.360393)",
+          "oklch(95.000000% 0.006045 256.360393)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 42,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-dim": {
+        "displayName": "Midnight · Dim",
+        "tonalRamp": [
+          "oklch(15.000000% 0.021290 257.518077)",
+          "oklch(26.428571% 0.037511 257.518077)",
+          "oklch(37.857143% 0.042580 257.518077)",
+          "oklch(49.285714% 0.042580 257.518077)",
+          "oklch(60.714286% 0.042580 257.518077)",
+          "oklch(72.142857% 0.039538 257.518077)",
+          "oklch(83.571429% 0.023318 257.518077)",
+          "oklch(95.000000% 0.007097 257.518077)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 42,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-line": {
+        "displayName": "Midnight · Line",
+        "tonalRamp": [
+          "oklch(15.000000% 0.025743 255.757008)",
+          "oklch(26.428571% 0.045356 255.757008)",
+          "oklch(37.857143% 0.051485 255.757008)",
+          "oklch(49.285714% 0.051485 255.757008)",
+          "oklch(60.714286% 0.051485 255.757008)",
+          "oklch(72.142857% 0.047808 255.757008)",
+          "oklch(83.571429% 0.028194 255.757008)",
+          "oklch(95.000000% 0.008581 255.757008)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 43,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-line-soft": {
+        "displayName": "Midnight · Line Soft",
+        "tonalRamp": [
+          "oklch(15.000000% 0.025728 255.296359)",
+          "oklch(26.428571% 0.045330 255.296359)",
+          "oklch(37.857143% 0.051456 255.296359)",
+          "oklch(49.285714% 0.051456 255.296359)",
+          "oklch(60.714286% 0.051456 255.296359)",
+          "oklch(72.142857% 0.047781 255.296359)",
+          "oklch(83.571429% 0.028178 255.296359)",
+          "oklch(95.000000% 0.008576 255.296359)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 43,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-row": {
+        "displayName": "Midnight · Row",
+        "tonalRamp": [
+          "oklch(15.000000% 0.022812 257.840892)",
+          "oklch(26.428571% 0.040193 257.840892)",
+          "oklch(37.857143% 0.045624 257.840892)",
+          "oklch(49.285714% 0.045624 257.840892)",
+          "oklch(60.714286% 0.045624 257.840892)",
+          "oklch(72.142857% 0.042365 257.840892)",
+          "oklch(83.571429% 0.024985 257.840892)",
+          "oklch(95.000000% 0.007604 257.840892)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 43,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-selected": {
+        "displayName": "Midnight · Selected",
+        "tonalRamp": [
+          "oklch(15.000000% 0.031901 258.275429)",
+          "oklch(26.428571% 0.056207 258.275429)",
+          "oklch(37.857143% 0.063802 258.275429)",
+          "oklch(49.285714% 0.063802 258.275429)",
+          "oklch(60.714286% 0.063802 258.275429)",
+          "oklch(72.142857% 0.059245 258.275429)",
+          "oklch(83.571429% 0.034939 258.275429)",
+          "oklch(95.000000% 0.010634 258.275429)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 43,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-orange": {
+        "displayName": "Midnight · Orange",
+        "tonalRamp": [
+          "oklch(15.000000% 0.035416 59.318874)",
+          "oklch(26.428571% 0.062400 59.318874)",
+          "oklch(37.857143% 0.089384 59.318874)",
+          "oklch(49.285714% 0.115117 59.318874)",
+          "oklch(60.714286% 0.115117 59.318874)",
+          "oklch(72.142857% 0.106894 59.318874)",
+          "oklch(83.571429% 0.063040 59.318874)",
+          "oklch(95.000000% 0.019186 59.318874)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 44,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "primary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-violet": {
+        "displayName": "Midnight · Violet",
+        "tonalRamp": [
+          "oklch(15.000000% 0.051461 282.601631)",
+          "oklch(26.428571% 0.090669 282.601631)",
+          "oklch(37.857143% 0.102922 282.601631)",
+          "oklch(49.285714% 0.102922 282.601631)",
+          "oklch(60.714286% 0.102922 282.601631)",
+          "oklch(72.142857% 0.095570 282.601631)",
+          "oklch(83.571429% 0.056362 282.601631)",
+          "oklch(95.000000% 0.017154 282.601631)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 44,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "secondary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-cyan": {
+        "displayName": "Midnight · Cyan",
+        "tonalRamp": [
+          "oklch(15.000000% 0.026455 214.677833)",
+          "oklch(26.428571% 0.046612 214.677833)",
+          "oklch(37.857143% 0.066768 214.677833)",
+          "oklch(49.285714% 0.081826 214.677833)",
+          "oklch(60.714286% 0.081826 214.677833)",
+          "oklch(72.142857% 0.075982 214.677833)",
+          "oklch(83.571429% 0.044810 214.677833)",
+          "oklch(95.000000% 0.013638 214.677833)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 44,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-green": {
+        "displayName": "Midnight · Green",
+        "tonalRamp": [
+          "oklch(15.000000% 0.047460 139.172473)",
+          "oklch(26.428571% 0.083620 139.172473)",
+          "oklch(37.857143% 0.098629 139.172473)",
+          "oklch(49.285714% 0.098629 139.172473)",
+          "oklch(60.714286% 0.098629 139.172473)",
+          "oklch(72.142857% 0.091584 139.172473)",
+          "oklch(83.571429% 0.054011 139.172473)",
+          "oklch(95.000000% 0.016438 139.172473)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 44,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-on-accent": {
+        "displayName": "Midnight · On Accent",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015963 254.886542)",
+          "oklch(26.428571% 0.028125 254.886542)",
+          "oklch(37.857143% 0.031925 254.886542)",
+          "oklch(49.285714% 0.031925 254.886542)",
+          "oklch(60.714286% 0.031925 254.886542)",
+          "oklch(72.142857% 0.029645 254.886542)",
+          "oklch(83.571429% 0.017483 254.886542)",
+          "oklch(95.000000% 0.005321 254.886542)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 45,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-surface": {
+        "displayName": "Midnight · Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.021921 258.278734)",
+          "oklch(26.428571% 0.038624 258.278734)",
+          "oklch(37.857143% 0.043843 258.278734)",
+          "oklch(49.285714% 0.043843 258.278734)",
+          "oklch(60.714286% 0.043843 258.278734)",
+          "oklch(72.142857% 0.040711 258.278734)",
+          "oklch(83.571429% 0.024009 258.278734)",
+          "oklch(95.000000% 0.007307 258.278734)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 45,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-recessed": {
+        "displayName": "Midnight · Recessed",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015927 256.911148)",
+          "oklch(26.428571% 0.028061 256.911148)",
+          "oklch(37.857143% 0.031853 256.911148)",
+          "oklch(49.285714% 0.031853 256.911148)",
+          "oklch(60.714286% 0.031853 256.911148)",
+          "oklch(72.142857% 0.029578 256.911148)",
+          "oklch(83.571429% 0.017444 256.911148)",
+          "oklch(95.000000% 0.005309 256.911148)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 45,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-hover": {
+        "displayName": "Midnight · Hover",
+        "tonalRamp": [
+          "oklch(15.000000% 0.024095 260.362805)",
+          "oklch(26.428571% 0.042454 260.362805)",
+          "oklch(37.857143% 0.048190 260.362805)",
+          "oklch(49.285714% 0.048190 260.362805)",
+          "oklch(60.714286% 0.048190 260.362805)",
+          "oklch(72.142857% 0.044748 260.362805)",
+          "oklch(83.571429% 0.026390 260.362805)",
+          "oklch(95.000000% 0.008032 260.362805)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 46,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-notice-bg": {
+        "displayName": "Midnight · Notice Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.010505 47.972869)",
+          "oklch(26.428571% 0.018509 47.972869)",
+          "oklch(37.857143% 0.021010 47.972869)",
+          "oklch(49.285714% 0.021010 47.972869)",
+          "oklch(60.714286% 0.021010 47.972869)",
+          "oklch(72.142857% 0.019510 47.972869)",
+          "oklch(83.571429% 0.011506 47.972869)",
+          "oklch(95.000000% 0.003502 47.972869)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 47,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "midnight-overlay": {
+        "displayName": "Midnight · Overlay",
+        "tonalRamp": [
+          "oklch(15.000000% 0.012501 254.548448 / 0.800000)",
+          "oklch(26.428571% 0.022026 254.548448 / 0.800000)",
+          "oklch(37.857143% 0.025002 254.548448 / 0.800000)",
+          "oklch(49.285714% 0.025002 254.548448 / 0.800000)",
+          "oklch(60.714286% 0.025002 254.548448 / 0.800000)",
+          "oklch(72.142857% 0.023216 254.548448 / 0.800000)",
+          "oklch(83.571429% 0.013692 254.548448 / 0.800000)",
+          "oklch(95.000000% 0.004167 254.548448 / 0.800000)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 47,
+          "selector": ":root[data-theme=\"midnight\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-bg": {
+        "displayName": "Phosphor · Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.010543 156.171346)",
+          "oklch(26.428571% 0.018575 156.171346)",
+          "oklch(37.857143% 0.021085 156.171346)",
+          "oklch(49.285714% 0.021085 156.171346)",
+          "oklch(60.714286% 0.021085 156.171346)",
+          "oklch(72.142857% 0.019579 156.171346)",
+          "oklch(83.571429% 0.011547 156.171346)",
+          "oklch(95.000000% 0.003514 156.171346)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 51,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-ink": {
+        "displayName": "Phosphor · Ink",
+        "tonalRamp": [
+          "oklch(15.000000% 0.015195 148.382282)",
+          "oklch(26.428571% 0.026772 148.382282)",
+          "oklch(37.857143% 0.030390 148.382282)",
+          "oklch(49.285714% 0.030390 148.382282)",
+          "oklch(60.714286% 0.030390 148.382282)",
+          "oklch(72.142857% 0.028219 148.382282)",
+          "oklch(83.571429% 0.016642 148.382282)",
+          "oklch(95.000000% 0.005065 148.382282)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 51,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-muted": {
+        "displayName": "Phosphor · Muted",
+        "tonalRamp": [
+          "oklch(15.000000% 0.018039 149.177792)",
+          "oklch(26.428571% 0.031783 149.177792)",
+          "oklch(37.857143% 0.036078 149.177792)",
+          "oklch(49.285714% 0.036078 149.177792)",
+          "oklch(60.714286% 0.036078 149.177792)",
+          "oklch(72.142857% 0.033501 149.177792)",
+          "oklch(83.571429% 0.019757 149.177792)",
+          "oklch(95.000000% 0.006013 149.177792)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 51,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-dim": {
+        "displayName": "Phosphor · Dim",
+        "tonalRamp": [
+          "oklch(15.000000% 0.018039 149.177792)",
+          "oklch(26.428571% 0.031783 149.177792)",
+          "oklch(37.857143% 0.036078 149.177792)",
+          "oklch(49.285714% 0.036078 149.177792)",
+          "oklch(60.714286% 0.036078 149.177792)",
+          "oklch(72.142857% 0.033501 149.177792)",
+          "oklch(83.571429% 0.019757 149.177792)",
+          "oklch(95.000000% 0.006013 149.177792)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 51,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-line": {
+        "displayName": "Phosphor · Line",
+        "tonalRamp": [
+          "oklch(15.000000% 0.023239 152.229780)",
+          "oklch(26.428571% 0.040944 152.229780)",
+          "oklch(37.857143% 0.046477 152.229780)",
+          "oklch(49.285714% 0.046477 152.229780)",
+          "oklch(60.714286% 0.046477 152.229780)",
+          "oklch(72.142857% 0.043157 152.229780)",
+          "oklch(83.571429% 0.025452 152.229780)",
+          "oklch(95.000000% 0.007746 152.229780)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 52,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-line-soft": {
+        "displayName": "Phosphor · Line Soft",
+        "tonalRamp": [
+          "oklch(15.000000% 0.020241 152.307211)",
+          "oklch(26.428571% 0.035662 152.307211)",
+          "oklch(37.857143% 0.040481 152.307211)",
+          "oklch(49.285714% 0.040481 152.307211)",
+          "oklch(60.714286% 0.040481 152.307211)",
+          "oklch(72.142857% 0.037590 152.307211)",
+          "oklch(83.571429% 0.022168 152.307211)",
+          "oklch(95.000000% 0.006747 152.307211)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 52,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-row": {
+        "displayName": "Phosphor · Row",
+        "tonalRamp": [
+          "oklch(15.000000% 0.014367 152.473196)",
+          "oklch(26.428571% 0.025314 152.473196)",
+          "oklch(37.857143% 0.028734 152.473196)",
+          "oklch(49.285714% 0.028734 152.473196)",
+          "oklch(60.714286% 0.028734 152.473196)",
+          "oklch(72.142857% 0.026682 152.473196)",
+          "oklch(83.571429% 0.015736 152.473196)",
+          "oklch(95.000000% 0.004789 152.473196)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 52,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-selected": {
+        "displayName": "Phosphor · Selected",
+        "tonalRamp": [
+          "oklch(15.000000% 0.021161 150.593502)",
+          "oklch(26.428571% 0.037284 150.593502)",
+          "oklch(37.857143% 0.042323 150.593502)",
+          "oklch(49.285714% 0.042323 150.593502)",
+          "oklch(60.714286% 0.042323 150.593502)",
+          "oklch(72.142857% 0.039300 150.593502)",
+          "oklch(83.571429% 0.023177 150.593502)",
+          "oklch(95.000000% 0.007054 150.593502)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 52,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-orange": {
+        "displayName": "Phosphor · Orange",
+        "tonalRamp": [
+          "oklch(15.000000% 0.031754 74.243295)",
+          "oklch(26.428571% 0.055948 74.243295)",
+          "oklch(37.857143% 0.080142 74.243295)",
+          "oklch(49.285714% 0.104336 74.243295)",
+          "oklch(60.714286% 0.105527 74.243295)",
+          "oklch(72.142857% 0.097989 74.243295)",
+          "oklch(83.571429% 0.057789 74.243295)",
+          "oklch(95.000000% 0.017588 74.243295)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 53,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "primary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-violet": {
+        "displayName": "Phosphor · Violet",
+        "tonalRamp": [
+          "oklch(15.000000% 0.042180 132.789957)",
+          "oklch(26.428571% 0.074317 132.789957)",
+          "oklch(37.857143% 0.096047 132.789957)",
+          "oklch(49.285714% 0.096047 132.789957)",
+          "oklch(60.714286% 0.096047 132.789957)",
+          "oklch(72.142857% 0.089187 132.789957)",
+          "oklch(83.571429% 0.052597 132.789957)",
+          "oklch(95.000000% 0.016008 132.789957)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 53,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "secondary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-cyan": {
+        "displayName": "Phosphor · Cyan",
+        "tonalRamp": [
+          "oklch(15.000000% 0.029157 171.748694)",
+          "oklch(26.428571% 0.051373 171.748694)",
+          "oklch(37.857143% 0.073588 171.748694)",
+          "oklch(49.285714% 0.081667 171.748694)",
+          "oklch(60.714286% 0.081667 171.748694)",
+          "oklch(72.142857% 0.075833 171.748694)",
+          "oklch(83.571429% 0.044722 171.748694)",
+          "oklch(95.000000% 0.013611 171.748694)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 53,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-green": {
+        "displayName": "Phosphor · Green",
+        "tonalRamp": [
+          "oklch(15.000000% 0.042180 132.789957)",
+          "oklch(26.428571% 0.074317 132.789957)",
+          "oklch(37.857143% 0.096047 132.789957)",
+          "oklch(49.285714% 0.096047 132.789957)",
+          "oklch(60.714286% 0.096047 132.789957)",
+          "oklch(72.142857% 0.089187 132.789957)",
+          "oklch(83.571429% 0.052597 132.789957)",
+          "oklch(95.000000% 0.016008 132.789957)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 53,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-on-accent": {
+        "displayName": "Phosphor · On Accent",
+        "tonalRamp": [
+          "oklch(15.000000% 0.010543 156.171346)",
+          "oklch(26.428571% 0.018575 156.171346)",
+          "oklch(37.857143% 0.021085 156.171346)",
+          "oklch(49.285714% 0.021085 156.171346)",
+          "oklch(60.714286% 0.021085 156.171346)",
+          "oklch(72.142857% 0.019579 156.171346)",
+          "oklch(83.571429% 0.011547 156.171346)",
+          "oklch(95.000000% 0.003514 156.171346)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 54,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-surface": {
+        "displayName": "Phosphor · Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.014223 156.514490)",
+          "oklch(26.428571% 0.025059 156.514490)",
+          "oklch(37.857143% 0.028446 156.514490)",
+          "oklch(49.285714% 0.028446 156.514490)",
+          "oklch(60.714286% 0.028446 156.514490)",
+          "oklch(72.142857% 0.026414 156.514490)",
+          "oklch(83.571429% 0.015577 156.514490)",
+          "oklch(95.000000% 0.004741 156.514490)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 54,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-recessed": {
+        "displayName": "Phosphor · Recessed",
+        "tonalRamp": [
+          "oklch(15.000000% 0.009098 155.053566)",
+          "oklch(26.428571% 0.016030 155.053566)",
+          "oklch(37.857143% 0.018196 155.053566)",
+          "oklch(49.285714% 0.018196 155.053566)",
+          "oklch(60.714286% 0.018196 155.053566)",
+          "oklch(72.142857% 0.016896 155.053566)",
+          "oklch(83.571429% 0.009964 155.053566)",
+          "oklch(95.000000% 0.003033 155.053566)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 54,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-hover": {
+        "displayName": "Phosphor · Hover",
+        "tonalRamp": [
+          "oklch(15.000000% 0.017326 152.404003)",
+          "oklch(26.428571% 0.030527 152.404003)",
+          "oklch(37.857143% 0.034653 152.404003)",
+          "oklch(49.285714% 0.034653 152.404003)",
+          "oklch(60.714286% 0.034653 152.404003)",
+          "oklch(72.142857% 0.032177 152.404003)",
+          "oklch(83.571429% 0.018976 152.404003)",
+          "oklch(95.000000% 0.005775 152.404003)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 55,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-notice-bg": {
+        "displayName": "Phosphor · Notice Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.012282 82.702784)",
+          "oklch(26.428571% 0.021639 82.702784)",
+          "oklch(37.857143% 0.024563 82.702784)",
+          "oklch(49.285714% 0.024563 82.702784)",
+          "oklch(60.714286% 0.024563 82.702784)",
+          "oklch(72.142857% 0.022809 82.702784)",
+          "oklch(83.571429% 0.013451 82.702784)",
+          "oklch(95.000000% 0.004094 82.702784)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 56,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "phosphor-overlay": {
+        "displayName": "Phosphor · Overlay",
+        "tonalRamp": [
+          "oklch(15.000000% 0.009714 153.011279 / 0.800000)",
+          "oklch(26.428571% 0.017115 153.011279 / 0.800000)",
+          "oklch(37.857143% 0.019428 153.011279 / 0.800000)",
+          "oklch(49.285714% 0.019428 153.011279 / 0.800000)",
+          "oklch(60.714286% 0.019428 153.011279 / 0.800000)",
+          "oklch(72.142857% 0.018040 153.011279 / 0.800000)",
+          "oklch(83.571429% 0.010639 153.011279 / 0.800000)",
+          "oklch(95.000000% 0.003238 153.011279 / 0.800000)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 56,
+          "selector": ":root[data-theme=\"phosphor\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-bg": {
+        "displayName": "Paper · Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.005549 89.723000)",
+          "oklch(26.428571% 0.009778 89.723000)",
+          "oklch(37.857143% 0.011099 89.723000)",
+          "oklch(49.285714% 0.011099 89.723000)",
+          "oklch(60.714286% 0.011099 89.723000)",
+          "oklch(72.142857% 0.010306 89.723000)",
+          "oklch(83.571429% 0.006078 89.723000)",
+          "oklch(95.000000% 0.001850 89.723000)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 60,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-ink": {
+        "displayName": "Paper · Ink",
+        "tonalRamp": [
+          "oklch(15.000000% 0.006528 272.920863)",
+          "oklch(26.428571% 0.011502 272.920863)",
+          "oklch(37.857143% 0.013057 272.920863)",
+          "oklch(49.285714% 0.013057 272.920863)",
+          "oklch(60.714286% 0.013057 272.920863)",
+          "oklch(72.142857% 0.012124 272.920863)",
+          "oklch(83.571429% 0.007150 272.920863)",
+          "oklch(95.000000% 0.002176 272.920863)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 60,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-muted": {
+        "displayName": "Paper · Muted",
+        "tonalRamp": [
+          "oklch(15.000000% 0.013758 279.985524)",
+          "oklch(26.428571% 0.024241 279.985524)",
+          "oklch(37.857143% 0.027517 279.985524)",
+          "oklch(49.285714% 0.027517 279.985524)",
+          "oklch(60.714286% 0.027517 279.985524)",
+          "oklch(72.142857% 0.025551 279.985524)",
+          "oklch(83.571429% 0.015069 279.985524)",
+          "oklch(95.000000% 0.004586 279.985524)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 60,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-dim": {
+        "displayName": "Paper · Dim",
+        "tonalRamp": [
+          "oklch(15.000000% 0.012781 279.782912)",
+          "oklch(26.428571% 0.022519 279.782912)",
+          "oklch(37.857143% 0.025563 279.782912)",
+          "oklch(49.285714% 0.025563 279.782912)",
+          "oklch(60.714286% 0.025563 279.782912)",
+          "oklch(72.142857% 0.023737 279.782912)",
+          "oklch(83.571429% 0.013999 279.782912)",
+          "oklch(95.000000% 0.004260 279.782912)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 60,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-line": {
+        "displayName": "Paper · Line",
+        "tonalRamp": [
+          "oklch(15.000000% 0.008896 289.713679)",
+          "oklch(26.428571% 0.015674 289.713679)",
+          "oklch(37.857143% 0.017793 289.713679)",
+          "oklch(49.285714% 0.017793 289.713679)",
+          "oklch(60.714286% 0.017793 289.713679)",
+          "oklch(72.142857% 0.016522 289.713679)",
+          "oklch(83.571429% 0.009744 289.713679)",
+          "oklch(95.000000% 0.002965 289.713679)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 61,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-line-soft": {
+        "displayName": "Paper · Line Soft",
+        "tonalRamp": [
+          "oklch(15.000000% 0.003781 312.292062)",
+          "oklch(26.428571% 0.006661 312.292062)",
+          "oklch(37.857143% 0.007562 312.292062)",
+          "oklch(49.285714% 0.007562 312.292062)",
+          "oklch(60.714286% 0.007562 312.292062)",
+          "oklch(72.142857% 0.007021 312.292062)",
+          "oklch(83.571429% 0.004141 312.292062)",
+          "oklch(95.000000% 0.001260 312.292062)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 61,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-row": {
+        "displayName": "Paper · Row",
+        "tonalRamp": [
+          "oklch(15.000000% 0.004010 73.740340)",
+          "oklch(26.428571% 0.007066 73.740340)",
+          "oklch(37.857143% 0.008021 73.740340)",
+          "oklch(49.285714% 0.008021 73.740340)",
+          "oklch(60.714286% 0.008021 73.740340)",
+          "oklch(72.142857% 0.007448 73.740340)",
+          "oklch(83.571429% 0.004392 73.740340)",
+          "oklch(95.000000% 0.001337 73.740340)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 61,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-selected": {
+        "displayName": "Paper · Selected",
+        "tonalRamp": [
+          "oklch(15.000000% 0.009878 260.169228)",
+          "oklch(26.428571% 0.017405 260.169228)",
+          "oklch(37.857143% 0.019757 260.169228)",
+          "oklch(49.285714% 0.019757 260.169228)",
+          "oklch(60.714286% 0.019757 260.169228)",
+          "oklch(72.142857% 0.018346 260.169228)",
+          "oklch(83.571429% 0.010819 260.169228)",
+          "oklch(95.000000% 0.003293 260.169228)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 61,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-orange": {
+        "displayName": "Paper · Orange",
+        "tonalRamp": [
+          "oklch(15.000000% 0.043374 44.344008)",
+          "oklch(26.428571% 0.076420 44.344008)",
+          "oklch(37.857143% 0.109467 44.344008)",
+          "oklch(49.285714% 0.123543 44.344008)",
+          "oklch(60.714286% 0.123543 44.344008)",
+          "oklch(72.142857% 0.114718 44.344008)",
+          "oklch(83.571429% 0.067654 44.344008)",
+          "oklch(95.000000% 0.020590 44.344008)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 62,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "primary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-violet": {
+        "displayName": "Paper · Violet",
+        "tonalRamp": [
+          "oklch(15.000000% 0.062844 301.741025)",
+          "oklch(26.428571% 0.110726 301.741025)",
+          "oklch(37.857143% 0.125689 301.741025)",
+          "oklch(49.285714% 0.125689 301.741025)",
+          "oklch(60.714286% 0.125689 301.741025)",
+          "oklch(72.142857% 0.116711 301.741025)",
+          "oklch(83.571429% 0.068830 301.741025)",
+          "oklch(95.000000% 0.020948 301.741025)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 62,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "secondary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-cyan": {
+        "displayName": "Paper · Cyan",
+        "tonalRamp": [
+          "oklch(15.000000% 0.026636 215.974324)",
+          "oklch(26.428571% 0.046929 215.974324)",
+          "oklch(37.857143% 0.067223 215.974324)",
+          "oklch(49.285714% 0.077494 215.974324)",
+          "oklch(60.714286% 0.077494 215.974324)",
+          "oklch(72.142857% 0.071959 215.974324)",
+          "oklch(83.571429% 0.042437 215.974324)",
+          "oklch(95.000000% 0.012916 215.974324)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 62,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-green": {
+        "displayName": "Paper · Green",
+        "tonalRamp": [
+          "oklch(15.000000% 0.042485 148.850922)",
+          "oklch(26.428571% 0.074854 148.850922)",
+          "oklch(37.857143% 0.107224 148.850922)",
+          "oklch(49.285714% 0.108018 148.850922)",
+          "oklch(60.714286% 0.108018 148.850922)",
+          "oklch(72.142857% 0.100303 148.850922)",
+          "oklch(83.571429% 0.059153 148.850922)",
+          "oklch(95.000000% 0.018003 148.850922)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 62,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "tertiary",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-on-accent": {
+        "displayName": "Paper · On Accent",
+        "tonalRamp": [
+          "oklch(15.000000% 0.003463 88.641145)",
+          "oklch(26.428571% 0.006102 88.641145)",
+          "oklch(37.857143% 0.006926 88.641145)",
+          "oklch(49.285714% 0.006926 88.641145)",
+          "oklch(60.714286% 0.006926 88.641145)",
+          "oklch(72.142857% 0.006431 88.641145)",
+          "oklch(83.571429% 0.003793 88.641145)",
+          "oklch(95.000000% 0.001154 88.641145)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 63,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-surface": {
+        "displayName": "Paper · Surface",
+        "tonalRamp": [
+          "oklch(15.000000% 0.005173 81.794719)",
+          "oklch(26.428571% 0.009114 81.794719)",
+          "oklch(37.857143% 0.010345 81.794719)",
+          "oklch(49.285714% 0.010345 81.794719)",
+          "oklch(60.714286% 0.010345 81.794719)",
+          "oklch(72.142857% 0.009606 81.794719)",
+          "oklch(83.571429% 0.005665 81.794719)",
+          "oklch(95.000000% 0.001724 81.794719)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 63,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-recessed": {
+        "displayName": "Paper · Recessed",
+        "tonalRamp": [
+          "oklch(15.000000% 0.004269 84.572173)",
+          "oklch(26.428571% 0.007521 84.572173)",
+          "oklch(37.857143% 0.008537 84.572173)",
+          "oklch(49.285714% 0.008537 84.572173)",
+          "oklch(60.714286% 0.008537 84.572173)",
+          "oklch(72.142857% 0.007927 84.572173)",
+          "oklch(83.571429% 0.004675 84.572173)",
+          "oklch(95.000000% 0.001423 84.572173)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 63,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-hover": {
+        "displayName": "Paper · Hover",
+        "tonalRamp": [
+          "oklch(15.000000% 0.007269 308.278914)",
+          "oklch(26.428571% 0.012808 308.278914)",
+          "oklch(37.857143% 0.014539 308.278914)",
+          "oklch(49.285714% 0.014539 308.278914)",
+          "oklch(60.714286% 0.014539 308.278914)",
+          "oklch(72.142857% 0.013500 308.278914)",
+          "oklch(83.571429% 0.007962 308.278914)",
+          "oklch(95.000000% 0.002423 308.278914)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 64,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-notice-bg": {
+        "displayName": "Paper · Notice Bg",
+        "tonalRamp": [
+          "oklch(15.000000% 0.020743 67.270909)",
+          "oklch(26.428571% 0.036547 67.270909)",
+          "oklch(37.857143% 0.041485 67.270909)",
+          "oklch(49.285714% 0.041485 67.270909)",
+          "oklch(60.714286% 0.041485 67.270909)",
+          "oklch(72.142857% 0.038522 67.270909)",
+          "oklch(83.571429% 0.022718 67.270909)",
+          "oklch(95.000000% 0.006914 67.270909)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 65,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      },
+      "paper-overlay": {
+        "displayName": "Paper · Overlay",
+        "tonalRamp": [
+          "oklch(15.000000% 0.011548 299.229217 / 0.533333)",
+          "oklch(26.428571% 0.020346 299.229217 / 0.533333)",
+          "oklch(37.857143% 0.023095 299.229217 / 0.533333)",
+          "oklch(49.285714% 0.023095 299.229217 / 0.533333)",
+          "oklch(60.714286% 0.023095 299.229217 / 0.533333)",
+          "oklch(72.142857% 0.021446 299.229217 / 0.533333)",
+          "oklch(83.571429% 0.012647 299.229217 / 0.533333)",
+          "oklch(95.000000% 0.003849 299.229217 / 0.533333)"
+        ],
+        "rampStatus": "synthesized-reference-only; not an implemented palette scale",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 65,
+          "selector": ":root[data-theme=\"paper\"]"
+        },
+        "role": "neutral",
+        "purpose": "Source theme value; its synthesized ramp is a preview reference only."
+      }
+    },
+    "typographyMeta": {
+      "page-heading": {
+        "displayName": "Workspace page heading",
+        "purpose": "Current workspace h1; 18px at <=600px.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 770,
+          "selector": ".page-heading h1"
+        }
+      },
+      "section-heading": {
+        "displayName": "Section heading",
+        "purpose": "Flat divider-section h2; literal size, not global h2 mandate.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 792,
+          "selector": ".section-heading h2"
+        }
+      },
+      "body-root": {
+        "displayName": "Root body default",
+        "purpose": "Inherited default; many operational surfaces explicitly use11–12px and longer prose leading.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 8,
+          "endLine": 14
+        }
+      },
+      "control": {
+        "displayName": "Standard action",
+        "purpose": "Generic .button text; onboarding/settings/tray vary explicitly.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 111
+        }
+      },
+      "supporting": {
+        "displayName": "Supporting copy",
+        "purpose": "Page-heading support copy example; not every paragraph.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 771
+        }
+      },
+      "metadata": {
+        "displayName": "Dense metadata",
+        "purpose": "Current sticky table-header text, also common in sidebar/footer metadata.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 799
+        }
+      }
+    },
+    "shadows": [
+      {
+        "name": "selection-marker",
+        "value": "inset 2px 0 var(--orange)",
+        "purpose": "Selected navigation/table/review rows; structural state marker, not elevation.",
+        "source": [
+          {
+            "file": "apps/ui/style.css",
+            "line": 162
+          },
+          {
+            "file": "apps/ui/style.css",
+            "line": 503
+          },
+          {
+            "file": "apps/ui/style.css",
+            "line": 513
+          },
+          {
+            "file": "apps/ui/style.css",
+            "line": 637
+          },
+          {
+            "file": "apps/ui/style.css",
+            "line": 752
+          }
+        ]
+      },
+      {
+        "name": "cited-line-marker",
+        "value": "inset 3px 0 var(--orange)",
+        "purpose": "Exact cited source line.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 548
+        }
+      },
+      {
+        "name": "annotation-marker",
+        "value": "inset 2px 0 var(--violet)",
+        "purpose": "Annotated source line when not also cited.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 550
+        }
+      }
+    ],
+    "motion": [
+      {
+        "name": "onboarding-dot-settle",
+        "value": "animation: dot-settle .44s both; animation-delay: var(--dot-delay,0ms);",
+        "purpose": "Dedicated setup dot alphabet only; not a global transition.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 620
+        }
+      },
+      {
+        "name": "onboarding-dot-keyframes",
+        "value": "@keyframes dot-settle { from { opacity: .12; transform: translateY(1.3px) scale(.5); } to { opacity: 1; transform: none; } }",
+        "purpose": "Dot appearance.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 621
+        }
+      },
+      {
+        "name": "onboarding-dot-stagger",
+        "value": "(x+y*2)%18*18 ms",
+        "purpose": "Per-dot CSS delay derived from alphabet position.",
+        "source": {
+          "file": "apps/ui/src/dot_type.rs",
+          "line": 63
+        }
+      },
+      {
+        "name": "onboarding-reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce) { .dot-pixel { animation: none; opacity: 1; transform: none; } }",
+        "purpose": "Reduced-motion path.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 712
+        }
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "workspace-medium",
+        "value": "1100px",
+        "query": "(max-width: 1100px)",
+        "purpose": "Sidebar160px; gutters22px; narrower two-column work layout.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 879,
+          "endLine": 893
+        }
+      },
+      {
+        "name": "workspace-stack",
+        "value": "850px",
+        "query": "(max-width: 850px)",
+        "purpose": "Work aside follows actions; brief/plugin layouts single-column.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 894,
+          "endLine": 903
+        }
+      },
+      {
+        "name": "workspace-narrow",
+        "value": "600px",
+        "query": "(max-width: 600px)",
+        "purpose": "Sidebar112px persists; hints hide, page gutters14px, h1 18px.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 904,
+          "endLine": 925
+        }
+      },
+      {
+        "name": "settings-stack",
+        "value": "760px",
+        "query": "(max-width: 760px)",
+        "purpose": "Setting fields stack; toggle rows retain label plus switch.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 1010,
+          "endLine": 1017
+        }
+      },
+      {
+        "name": "onboarding-compact",
+        "value": "850px",
+        "query": "(max-width: 850px)",
+        "purpose": "Setup rail narrows150px.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 692,
+          "endLine": 698
+        }
+      },
+      {
+        "name": "onboarding-stack",
+        "value": "620px",
+        "query": "(max-width: 620px)",
+        "purpose": "Setup rail/steps become horizontal; content stacks.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 699,
+          "endLine": 710
+        }
+      },
+      {
+        "name": "workspace-short",
+        "value": "760px",
+        "query": "(max-height: 760px)",
+        "purpose": "Compress sidebar spacing/navigation heights.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 865,
+          "endLine": 872
+        }
+      },
+      {
+        "name": "workspace-very-short",
+        "value": "570px",
+        "query": "(max-height: 570px)",
+        "purpose": "Hide sidebar group labels and instance; navigation height24px.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 873,
+          "endLine": 878
+        }
+      },
+      {
+        "name": "legacy-narrow-residual",
+        "value": "500px",
+        "query": "(max-width: 500px)",
+        "purpose": "Still-active table min-width460px/horizontal overflow, hidden context/page count, modal inset reductions. Earlier app-shell geometry in this block is overridden.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 332,
+          "endLine": 350
+        }
+      },
+      {
+        "name": "bragbook-stack",
+        "value": "600px",
+        "query": "(max-width: 600px)",
+        "purpose": "Export controls stack; form button width100%.",
+        "source": {
+          "file": "apps/ui/style.css",
+          "line": 1045,
+          "endLine": 1049
+        }
+      }
+    ],
+    "rampMethodology": {
+      "status": "SYNTHESIZED REFERENCE RAMPS; no ramp colors are implemented CSS palette tokens.",
+      "sourceColorSpace": "CSS hex sRGB; source hex remains normative in DESIGN frontmatter.",
+      "conversion": "sRGB gamma decode -> linear-sRGB -> OKLab (Björn Ottosson matrices) -> OKLCH.",
+      "lightnessPercent": [
+        15.0,
+        26.428571,
+        37.857143,
+        49.285714,
+        60.714286,
+        72.142857,
+        83.571429,
+        95.0
+      ],
+      "hue": "Preserve each source color OKLCH hue at all eight steps.",
+      "chroma": "Source C * min(1, L/0.30, (1-L)/0.30), then reduce C by 50-iteration binary search if required for linear-sRGB gamut, preserving L and hue.",
+      "alpha": "Preserve source alpha, including overlay80% in dark themes and overlay136/255 in Paper. Ramp swatches still composite differently by canvas.",
+      "precision": "Six decimals in CSS strings. All unrounded candidates checked in linear-sRGB gamut.",
+      "canonicalField": "Intentionally omitted: source hex is canonical, not an approximation of an incumbent OKLCH token. Avoid suggesting a new primitive source of truth."
+    }
+  },
+  "components": [
+    {
+      "name": "Default button",
+      "kind": "button",
+      "refersTo": "button-default",
+      "description": "Shared 28px minimum-height control. Transparent resting fill, line border, 4px corners; orange border/text on hover. Disabled buttons retain the implemented hover rules while opacity and cursor change.",
+      "html": "<button class=\"ds-button\" type=\"button\">Save candidate</button>\n<button class=\"ds-button\" type=\"button\" disabled>Saving…</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 28px; padding: 4px 11px; border: 1px solid var(--line, #50516c); border-radius: 4px; color: var(--ink, #d2cfdb); background: transparent; font: 400 12px/1.5 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; white-space: nowrap; text-decoration: none; cursor: pointer; }\n.ds-button:hover { border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }\n.ds-button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-button:disabled { opacity: .5; cursor: wait; }",
+      "source": "apps/ui/style.css:83–91, 111–112, 784"
+    },
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "General primary action uses the selected surface, soft border and ink text; hover uses the hover surface with orange border/text. The settings Save bar has a separate orange-fill override and is not this component.",
+      "html": "<button class=\"ds-button ds-primary\" type=\"button\">Save context</button>\n<button class=\"ds-button ds-primary\" type=\"button\" disabled>Saving…</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 28px; padding: 4px 11px; border: 1px solid var(--line, #50516c); border-radius: 4px; color: var(--ink, #d2cfdb); background: transparent; font: 400 12px/1.5 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; white-space: nowrap; text-decoration: none; cursor: pointer; }\n.ds-button:hover { border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }\n.ds-button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-button:disabled { opacity: .5; cursor: wait; }\n.ds-button.ds-primary { background: var(--selected, #38354d); border-color: var(--line-soft, #37364d); color: var(--ink, #d2cfdb); }\n.ds-button.ds-primary:hover { background: var(--hover, #333145); border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }",
+      "source": "apps/ui/style.css:111–114, 784–787; apps/ui/src/main.rs:662"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary is an orange-text variant of the shared outlined button; it is not a muted filled button.",
+      "html": "<button class=\"ds-button ds-secondary\" type=\"button\">Done</button>\n<button class=\"ds-button ds-secondary\" type=\"button\" disabled>Done</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 28px; padding: 4px 11px; border: 1px solid var(--line, #50516c); border-radius: 4px; color: var(--ink, #d2cfdb); background: transparent; font: 400 12px/1.5 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; white-space: nowrap; text-decoration: none; cursor: pointer; }\n.ds-button:hover { border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }\n.ds-button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-button:disabled { opacity: .5; cursor: wait; }\n.ds-button.ds-secondary { color: var(--orange, #ffa064); }",
+      "source": "apps/ui/style.css:111–115, 784; apps/ui/src/main.rs:663"
+    },
+    {
+      "name": "Compact button",
+      "kind": "button",
+      "refersTo": "button-compact",
+      "description": "Compact keeps the shared 28px minimum height and orange text. Its more specific 2px 10px padding survives the later general button override.",
+      "html": "<button class=\"ds-button ds-compact\" type=\"button\">Search context</button>\n<button class=\"ds-button ds-compact\" type=\"button\" disabled>Search context</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 28px; padding: 4px 11px; border: 1px solid var(--line, #50516c); border-radius: 4px; color: var(--ink, #d2cfdb); background: transparent; font: 400 12px/1.5 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; white-space: nowrap; text-decoration: none; cursor: pointer; }\n.ds-button:hover { border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }\n.ds-button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-button:disabled { opacity: .5; cursor: wait; }\n.ds-button.ds-compact { color: var(--orange, #ffa064); padding: 2px 10px; }",
+      "source": "apps/ui/style.css:111–116, 784; apps/ui/src/main.rs:615"
+    },
+    {
+      "name": "Text button",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Muted text with a transparent border; hover changes text to orange and adds the row surface. Shape and minimum height remain shared.",
+      "html": "<button class=\"ds-button ds-text\" type=\"button\">Cancel</button>\n<button class=\"ds-button ds-text\" type=\"button\" disabled>Cancel</button>",
+      "css": ".ds-button { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 28px; padding: 4px 11px; border: 1px solid var(--line, #50516c); border-radius: 4px; color: var(--ink, #d2cfdb); background: transparent; font: 400 12px/1.5 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; white-space: nowrap; text-decoration: none; cursor: pointer; }\n.ds-button:hover { border-color: var(--orange, #ffa064); color: var(--orange, #ffa064); }\n.ds-button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-button:disabled { opacity: .5; cursor: wait; }\n.ds-button.ds-text { border-color: transparent; color: var(--muted, #aaa6bb); }\n.ds-button.ds-text:hover { color: var(--orange, #ffa064); background: var(--row, #282739); }",
+      "source": "apps/ui/style.css:111–118, 784, 788; apps/ui/src/main.rs:662"
+    },
+    {
+      "name": "Standard text input",
+      "kind": "input",
+      "refersTo": "input-standard",
+      "description": "Square field from the capture form: surface background, 1px line border, 6px 8px padding and 12px type. Parent grid gap7px and label margin5px reproduce that form context. Settings fields instead use 5px corners, 32px minimum height and the background token.",
+      "html": "<div class=\"ds-capture-field\"><label for=\"ds-capture-title\">Title</label><input id=\"ds-capture-title\" type=\"text\" required maxlength=\"300\" placeholder=\"A meeting, a note, a piece of knowledge\"></div>",
+      "css": ".ds-capture-field { display: grid; gap: 7px; font: 400 13px/1.55 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; }\n.ds-capture-field label { font-size: 11px; color: var(--muted, #aaa6bb); margin-top: 5px; }\n.ds-capture-field input { background: var(--surface, #252435); color: var(--ink, #d2cfdb); border: 1px solid var(--line, #50516c); border-radius: 0; padding: 6px 8px; font: inherit; font-size: 12px; }\n.ds-capture-field input::placeholder { color: var(--muted, #aaa6bb); opacity: 1; }\n.ds-capture-field input:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }",
+      "source": "apps/ui/style.css:83–89, 274–278; apps/ui/src/main.rs:662"
+    },
+    {
+      "name": "Workspace navigation selection",
+      "kind": "nav",
+      "refersTo": "nav-selected",
+      "description": "Daily navigation in the normal 180px sidebar. Selected row uses selected fill, ink text and a 2px orange leading rule; shortcuts stay muted except for the selected orange key. The specimen includes the real sidebar padding/background/border, but no fixed viewport height.",
+      "html": "<aside class=\"ds-sidebar\"><nav class=\"ds-workspace-nav\" aria-label=\"Main navigation\"><div class=\"ds-nav-group\"><span class=\"ds-nav-group-label\">Daily</span><button type=\"button\" aria-current=\"false\"><span>Work</span><kbd class=\"ds-nav-key\">1</kbd></button><button type=\"button\" aria-current=\"false\"><span>Focus</span><kbd class=\"ds-nav-key\">9</kbd></button><button type=\"button\" aria-current=\"false\"><span>Meetings</span><kbd class=\"ds-nav-key\">8</kbd></button><button class=\"ds-active\" type=\"button\" aria-current=\"page\"><span>Bragbook</span><kbd class=\"ds-nav-key\">b</kbd></button></div></nav></aside>",
+      "css": ".ds-sidebar { box-sizing: border-box; width: 180px; padding: 22px 12px 12px; background: var(--recessed, #181821); border-right: 1px solid var(--line-soft, #37364d); font: 400 13px/1.55 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; }\n.ds-workspace-nav { display: flex; flex-direction: column; flex: 0 0 auto; align-items: stretch; gap: 18px; overflow: visible; min-height: 0; }\n.ds-nav-group { display: grid; gap: 2px; }\n.ds-nav-group-label { color: var(--muted, #aaa6bb); font-size: 10px; padding: 0 10px 6px; }\n.ds-workspace-nav button { box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 30px; padding: 5px 10px; border: 0; border-radius: 4px; text-align: left; color: var(--muted, #aaa6bb); background: transparent; box-shadow: none; font: inherit; font-size: 12px; white-space: nowrap; cursor: pointer; }\n.ds-workspace-nav button.ds-active { color: var(--ink, #d2cfdb); background: var(--selected, #38354d); box-shadow: inset 2px 0 var(--orange, #ffa064); }\n.ds-workspace-nav button:hover:not(.ds-active) { color: var(--ink, #d2cfdb); background: var(--row, #282739); }\n.ds-workspace-nav .ds-nav-key { font: inherit; font-size: 10px; color: var(--muted, #aaa6bb); padding: 0; }\n.ds-workspace-nav button.ds-active .ds-nav-key { color: var(--orange, #ffa064); }\n.ds-workspace-nav button:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-workspace-nav button:disabled { opacity: .5; cursor: wait; }\n@media (max-height: 760px) { .ds-sidebar { box-sizing: border-box; padding-top: 14px; } .ds-workspace-nav { gap: 12px; } .ds-workspace-nav button { box-sizing: border-box; min-height: 27px; padding-top: 3px; padding-bottom: 3px; } .ds-nav-group-label { padding-bottom: 3px; } }\n@media (max-height: 570px) { .ds-workspace-nav { gap: 7px; } .ds-nav-group-label { display: none; } .ds-workspace-nav button { box-sizing: border-box; min-height: 24px; } }\n@media (max-width: 1100px) { .ds-sidebar { box-sizing: border-box; width: 160px; padding-left: 10px; padding-right: 10px; } }\n@media (max-width: 600px) { .ds-sidebar { box-sizing: border-box; width: 112px; padding-left: 5px; padding-right: 5px; } .ds-workspace-nav button { box-sizing: border-box; padding-left: 7px; padding-right: 7px; font-size: 10px; } .ds-workspace-nav .ds-nav-key { display: none; } .ds-nav-group-label { font-size: 9px; } }",
+      "source": "apps/ui/style.css:728–755, 865–877, 904–910; apps/ui/src/workspace.rs:111–125"
+    },
+    {
+      "name": "Settings badge",
+      "kind": "chip",
+      "refersTo": "settings-badge",
+      "description": "The implemented small settings badge, not a generalized status-chip system. Muted 9px text on row fill, a soft border and 4px radius.",
+      "html": "<span class=\"ds-settings-badge\">Automatic by default</span>",
+      "css": ".ds-settings-badge { color: var(--muted, #aaa6bb); background: var(--row, #282739); border: 1px solid var(--line-soft, #37364d); border-radius: 4px; padding: 3px 7px; font: 400 9px/1.4 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; flex: none; }",
+      "source": "apps/ui/style.css:947; apps/ui/src/settings.rs:53"
+    },
+    {
+      "name": "Ruled panel",
+      "kind": "card",
+      "refersTo": "panel-ruled",
+      "description": "Effective workspace panel has only a soft top rule, transparent fill, square corners and 18px top padding. The heading is static with 16px bottom margin; focus-within does not brighten it. This specimen is the implemented Processing history heading in its empty state.",
+      "html": "<section class=\"ds-panel\"><div class=\"ds-section-heading\"><h2>Processing history</h2><span>PERSISTENT JOBS</span></div></section>",
+      "css": ".ds-panel { position: relative; min-width: 0; border: 0; border-top: 1px solid var(--line-soft, #37364d); border-radius: 0; padding: 18px 0 0; background: transparent; color: var(--ink, #d2cfdb); font: 400 13px/1.55 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; }\n.ds-panel:focus-within { border-color: var(--line-soft, #37364d); }\n.ds-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; min-height: 18px; padding: 0; }\n.ds-panel > .ds-section-heading { position: static; margin: 0 0 16px; pointer-events: auto; }\n.ds-section-heading h2 { margin: 0; padding: 0; font-size: 12px; font-weight: 400; color: var(--ink, #d2cfdb); background: transparent; white-space: nowrap; }\n.ds-section-heading > span { background: transparent; padding: 0 5px; font-size: 10px; pointer-events: auto; }",
+      "source": "apps/ui/style.css:122–130, 789–794; apps/ui/src/main.rs:651"
+    },
+    {
+      "name": "Pinned source evidence excerpt",
+      "kind": "custom",
+      "refersTo": "source-excerpt",
+      "description": "Bragbook's revision-and-line citation beside a quoted source passage. Recessed excerpt with a 1px line rule and cyan source button. The sentence is explicitly synthetic specimen content; the production button opens that exact saved revision and line.",
+      "html": "<div class=\"ds-bragbook-evidence\"><blockquote><button class=\"ds-source-link\" type=\"button\">Open source · revision 1 · line 3</button><p class=\"ds-workflow-body\">[Synthetic example] Completed the project handoff.</p></blockquote></div>",
+      "css": ".ds-bragbook-evidence { color: var(--ink, #d2cfdb); font: 400 13px/1.55 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; }\n.ds-bragbook-evidence blockquote { margin: 14px 0; padding: 8px 12px; border-left: 1px solid var(--line, #50516c); background: var(--recessed, #181821); overflow-wrap: anywhere; }\n.ds-bragbook-evidence p { margin: 6px 0; max-width: 72ch; }\n.ds-workflow-body { white-space: pre-wrap; overflow-wrap: anywhere; }\n.ds-source-link { border: 0; border-radius: 0; background: none; padding: 0; font: 400 11px/1.6 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; color: var(--cyan, #7dc4cf); text-align: left; cursor: pointer; }\n.ds-source-link:hover { text-decoration: underline; text-underline-offset: 3px; }\n.ds-source-link:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n.ds-source-link:disabled { opacity: .5; cursor: wait; }",
+      "source": "apps/ui/style.css:173–175, 432, 1038–1039; apps/ui/src/bragbook.rs:185–187"
+    },
+    {
+      "name": "Filled settings card and switch",
+      "kind": "card",
+      "refersTo": "settings-card",
+      "description": "Deliberate exception to the ruled panel: a surface-filled settings card with soft border and 7px corners. Includes the actual automatic-summary switch with associated label/help. Switch is 34×20px with a radial-gradient thumb; checked fill is orange. No transition is implemented.",
+      "html": "<div class=\"ds-settings-card\"><div class=\"ds-setting-row\"><div class=\"ds-setting-copy\"><label for=\"ds-meeting-automatic\">Summarize automatically</label><p id=\"ds-meeting-automatic-help\">Finish a recording. Get a summary and cited action items.</p></div><input id=\"ds-meeting-automatic\" class=\"ds-setting-switch\" type=\"checkbox\" role=\"switch\" aria-describedby=\"ds-meeting-automatic-help\" checked></div></div>",
+      "css": ".ds-settings-card { border: 1px solid var(--line-soft, #37364d); background: var(--surface, #252435); border-radius: 7px; overflow: hidden; min-width: 0; color: var(--ink, #d2cfdb); font: 400 13px/1.55 \"JetBrains Mono\", \"SFMono-Regular\", Consolas, monospace; font-synthesis: none; }\n.ds-setting-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 290px); align-items: center; gap: 24px; padding: 17px 18px; min-width: 0; }\n.ds-setting-row + .ds-setting-row { border-top: 1px solid var(--line-soft, #37364d); }\n.ds-setting-copy { min-width: 0; }\n.ds-setting-row label { display: block; margin: 0; color: var(--ink, #d2cfdb); font-size: 12px; line-height: 1.5; }\n.ds-setting-copy p { margin: 5px 0 0; color: var(--muted, #aaa6bb); font-size: 10px; line-height: 1.7; max-width: 46ch; }\n.ds-setting-switch { box-sizing: border-box; appearance: none; -webkit-appearance: none; justify-self: end; flex: none; width: 34px; height: 20px; min-height: 0; border: 1px solid var(--line, #50516c); border-radius: 20px; background: var(--recessed, #181821); background-image: radial-gradient(circle at 9px 50%, var(--muted, #aaa6bb) 0 6px, transparent 6.5px); padding: 0; margin: 0; position: relative; cursor: pointer; }\n.ds-setting-switch:checked { background-color: var(--orange, #ffa064); border-color: var(--orange, #ffa064); background-image: radial-gradient(circle at calc(100% - 9px) 50%, var(--on-accent, #191824) 0 6px, transparent 6.5px); }\n.ds-setting-switch:disabled { cursor: default; opacity: .5; }\n.ds-setting-switch:focus-visible { outline: 1px solid var(--orange, #ffa064); outline-offset: 2px; }\n@media (max-width: 1100px) { .ds-setting-row { grid-template-columns: minmax(0, 1fr) minmax(160px, 240px); gap: 18px; } }\n@media (max-width: 760px) { .ds-setting-row { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 16px; } .ds-setting-row:has(> .ds-setting-switch) { grid-template-columns: minmax(0, 1fr) auto; } }",
+      "source": "apps/ui/style.css:948–963, 1007–1015; apps/ui/src/settings.rs:53–54"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Console",
+    "overview": "Thesaurus is a quiet place to recover context and continue working. A persistent sidebar, monospaced text, restrained color and fine dividers give private work memory a stable, inspectable form. The user chose “The Quiet Console” as the system’s description; calm, precise and quietly technical are editorial descriptions of the existing interface.\n\nThe workspace is compact and flat. Headings establish place without competing with actions, metadata stays close to its subject, and source passages remain visibly connected to their citations. Settings use bounded groups; onboarding carries the more expressive dot lettering. These are distinct patterns within the same interface.",
+    "keyCharacteristics": [
+      "Persistent navigation and a stable workspace frame.",
+      "One monospaced family, with hierarchy carried by size, spacing and tone.",
+      "Flat tonal surfaces, fine rules and inset selection markers.",
+      "Compact controls with explicit keyboard focus.",
+      "Citations and source passages presented as part of the work."
+    ],
+    "rules": [
+      {
+        "name": "The Role Before Hue Rule",
+        "body": "Use the existing theme variable for its implemented role. The variable named orange also carries focus, attention and review states; it is not an exclusive primary-action color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scoped Expression Rule",
+        "body": "Keep the dot alphabet and its entrance animation in onboarding. Workspace headings and operational copy use the shared monospaced family.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate workspace regions with tone, spacing and fine rules. Keep the existing inset markers as state indicators rather than treating them as elevation shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the active theme’s complete palette and retain distinct role tokens even when their values coincide.",
+      "Do preserve the thin orange focus outline and the leading rule on selected navigation and cited lines.",
+      "Do let Bragbook headings and source passages wrap; keep their established reading widths.",
+      "Do use the transparent, top-ruled panel for ordinary workspace sections and the filled card for settings groups.",
+      "Do retain visible labels, source references and the existing reduced-motion path."
+    ],
+    "donts": [
+      "Don't restore the superseded outer terminal frame, horizontal main navigation or zebra table rows when extending the current workspace.",
+      "Don't turn every primary action into an orange-filled button; that fill is a scoped settings Save treatment.",
+      "Don't apply onboarding dot lettering or its animation to ordinary workspace headings.",
+      "Don't treat the measurement aliases or synthesized preview ramps as implemented CSS scales.",
+      "Don't describe the bundled font as having a supplied medium or bold face, or claim accessibility conformance from this extraction."
+    ]
+  }
+}

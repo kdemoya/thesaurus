@@ -1,0 +1,111 @@
+.app-shell button:disabled { cursor: default; }
+.review-queue { max-width: none; }
+.review-queue-heading { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; margin-bottom: 20px; }
+.review-queue-heading h2 { font-size: 16px; line-height: 1.5; margin: 0 0 5px; }
+.review-queue-heading p { font-size: 12px; color: var(--muted); margin: 0; }
+.review-position { font-size: 11px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.review-feedback:empty { display: none; }
+.review-feedback { color: var(--green); font-size: 12px; line-height: 1.7; padding: 0 0 18px; max-width: 72ch; }
+.review-entry { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 36px; border-top: 1px solid var(--line-soft); padding-top: 22px; }
+.review-entry h3 { margin: 0; font-size: 13px; color: var(--ink); line-height: 1.5; }
+.review-evidence, .review-editor { min-width: 0; }
+.review-source-meta { color: var(--muted); font-size: 11px; margin: 8px 0 20px; }
+.review-evidence blockquote { border: 0; border-left: 1px solid var(--line); background: var(--recessed); margin: 0 0 16px; padding: 16px; }
+.review-evidence blockquote p { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.85; margin: 0 0 14px; max-width: 72ch; }
+.review-provenance, .review-source-note { color: var(--muted); font-size: 11px; line-height: 1.8; }
+.review-provenance summary { padding: 6px 0; }
+.review-provenance p { max-width: 65ch; overflow-wrap: anywhere; }
+.review-editor > header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+.review-editor > header span { font-size: 10px; color: var(--muted); }
+.review-editor fieldset { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; gap: 16px; }
+.review-editor label { display: grid; gap: 7px; font-size: 12px; color: var(--ink); margin: 0; }
+.review-editor textarea, .review-editor input:not([type=checkbox]) { width: 100%; min-width: 0; border-radius: 4px; padding: 9px 10px; font-size: 13px; line-height: 1.65; background: var(--surface); }
+.review-editor textarea { resize: vertical; field-sizing: content; min-height: calc(2lh + 20px); }
+.review-editor textarea[rows="3"] { min-height: calc(3lh + 20px); }
+.review-optional summary { color: var(--muted); font-size: 11px; cursor: pointer; padding: 4px 0; }
+.review-optional label { margin-top: 14px; }
+.review-decision { border-top: 1px solid var(--line-soft); padding-top: 18px; margin-top: 2px; }
+.review-editor .review-attestation { display: flex; align-items: flex-start; gap: 9px; color: var(--muted); font-size: 11px; line-height: 1.7; max-width: 65ch; }
+.review-attestation input { flex: none; margin: 3px 0 0; accent-color: var(--violet); }
+.review-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.review-actions .button { min-height: 34px; padding: 6px 12px; }
+.review-actions .review-accept { border-color: var(--line); }
+.review-actions .review-accept:not(:disabled) { border-color: var(--orange); }
+.review-decision-hint { font-size: 10px; line-height: 1.7; color: var(--muted); margin: 10px 0 0; }
+.review-discard { justify-self: start; font-size: 11px; }
+.review-error { color: var(--orange); font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.review-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; border-top: 1px solid var(--line-soft); padding-top: 18px; margin-top: 26px; gap: 12px; }
+.review-pagination > span { color: var(--muted); font-size: 10px; }
+.review-complete { padding: 28px 0; max-width: 65ch; }
+.review-complete h3 { font-size: 18px; margin: 0 0 12px; }
+.review-complete p { color: var(--muted); font-size: 13px; line-height: 1.8; }
+@media (max-width: 1000px) { .review-entry { gap: 24px; } .review-pagination > span { flex-basis: 100%; order: 3; } }
+@media (max-width: 760px) { .review-entry { grid-template-columns: minmax(0, 1fr); gap: 24px; } .review-queue-heading { flex-wrap: wrap; gap: 10px; } }
+@media (max-width: 600px) { .review-queue-heading h2 { font-size: 16px; } .review-editor textarea, .review-editor input:not([type=checkbox]) { font-size: 16px; } .review-actions { gap: 8px; } .review-actions .button { min-height: 40px; } }
+
+.review-saved-copy { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+.review-retained-drafts { margin-top: 22px; border-top: 1px solid var(--line-soft); padding-top: 14px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.review-retained-drafts p { max-width: 72ch; }
+.review-retained-drafts pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 72ch; }
+.review-retained-drafts details { margin: 12px 0; }
+
+/* Shared workspace styling. */
+.app-shell .page-heading p { font-size: 12px; line-height: 1.7; max-width: 72ch; }
+.app-shell .page-sections button { min-height: 38px; font-size: 12px; }
+.app-shell .page-content > * { max-width: none; }
+.app-shell .page-content .section-heading h2 { font-size: 16px; line-height: 1.5; }
+.app-shell .page-content .section-heading p,
+.app-shell .page-content .panel > p,
+.app-shell .page-content .workflow-body { line-height: 1.8; max-width: 72ch; overflow-wrap: anywhere; }
+.app-shell .page-content .panel > .section-heading { margin-bottom: 18px; gap: 12px; }
+.app-shell .page-content .panel { border-top-color: var(--line-soft); }
+.app-shell .page-content .button { min-height: 34px; }
+.app-shell .page-content label { line-height: 1.6; }
+.app-shell .page-content :is(input:not([type=checkbox]):not([type=radio]), select, textarea) {
+  min-width: 0; max-width: 100%; min-height: 34px; border-radius: 4px; font-size: 13px; line-height: 1.6;
+}
+.app-shell .page-content textarea { resize: vertical; }
+.app-shell .page-content :is(.task-table-scroll, .source-grid, .workflow-body, pre) { min-width: 0; }
+.app-shell .page-content :is(pre, code) { overflow-wrap: anywhere; }
+.app-shell .page-content :is(.brief-project, .plugin-list-row) { min-height: 44px; line-height: 1.6; }
+.app-shell .page-content :is(.brief-layout, .plugin-layout, .overview-columns) { gap: 32px; }
+.app-shell .page-content :is(.brief-layout, .plugin-layout) { grid-template-columns: 220px minmax(0, 1fr); }
+.app-shell .page-content .task-detail blockquote { max-width: 72ch; overflow-wrap: anywhere; line-height: 1.85; }
+.app-shell .page-content .empty-state { max-width: 72ch; padding: 30px 0; }
+.app-shell .page-content .empty-state p { line-height: 1.8; }
+.app-shell .page-content .search-form { min-height: 48px; }
+.app-shell .page-content .source-card { padding-top: 16px; padding-bottom: 16px; }
+.app-shell .page-content .source-card h3 { font-size: 13px; overflow-wrap: anywhere; }
+.app-shell .page-content .settings-intro p,
+.app-shell .page-content .setting-copy p { font-size: 12px; line-height: 1.7; }
+.app-shell .page-content .setting-row label,
+.app-shell .page-content .setting-label { font-size: 13px; }
+.app-shell .page-content .settings-savebar p,
+.app-shell .page-content .settings-save-state { font-size: 11px; }
+.app-shell .modal :is(input:not([type=checkbox]):not([type=radio]), select, textarea) { max-width: 100%; min-height: 34px; font-size: 13px; }
+.app-shell .modal :is(p, label, small) { line-height: 1.7; }
+.app-shell .modal .button, .app-shell .onboard .button { min-height: 34px; }
+.app-shell .onboard :is(p, label, small) { line-height: 1.7; }
+.app-shell .onboard :is(input:not([type=checkbox]):not([type=radio]), select, textarea) { min-width: 0; max-width: 100%; min-height: 34px; font-size: 13px; }
+.app-shell ::selection { background: var(--selected); color: var(--ink); }
+.app-shell :is(input, textarea) { caret-color: var(--orange); }
+
+@media (max-width: 850px) {
+  .app-shell .page-content :is(.brief-layout, .plugin-layout, .overview-columns) { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+@media (max-width: 600px) {
+  .app-shell .page-heading p { font-size: 12px; }
+  .app-shell .page-sections button { font-size: 12px; min-height: 40px; }
+  .app-shell .page-content .button { min-height: 40px; }
+  .app-shell .page-content :is(input:not([type=checkbox]):not([type=radio]), select, textarea),
+  .app-shell .modal :is(input:not([type=checkbox]):not([type=radio]), select, textarea),
+  .app-shell .onboard :is(input:not([type=checkbox]):not([type=radio]), select, textarea) { font-size: 16px; }
+  .app-shell .page-content :is(.task-table-scroll, .source-grid) { max-width: 100%; overflow-x: auto; }
+  .app-shell .page-content .setting-row { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .app-shell .page-content .setting-row > .button,
+  .app-shell .page-content .setting-unit { justify-self: start; }
+  .app-shell.onboarding-shell { grid-template-columns: minmax(0, 1fr); }
+  .app-shell.onboarding-shell > .app-header { display: none; }
+  .app-shell.onboarding-shell > .workspace-body { grid-column: 1; }
+}

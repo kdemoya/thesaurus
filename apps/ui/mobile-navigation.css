@@ -1,0 +1,48 @@
+/* Compact workspace navigation. */
+.mobile-navigation { display: none; }
+
+.mobile-nav-drawer {
+  position: fixed;
+  inset: 12px auto auto 12px;
+  margin: 0;
+  width: min(340px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 18px;
+  background: var(--recessed);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font: inherit;
+}
+.mobile-nav-drawer::backdrop { background: var(--overlay); }
+.mobile-nav-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.mobile-nav-heading h2 { margin: 0; color: var(--ink); font-size: 16px; line-height: 1.5; }
+.mobile-nav-heading .button { padding-right: 0; }
+.mobile-nav-drawer .workspace-nav { gap: 20px; }
+.mobile-nav-drawer .nav-group { gap: 3px; }
+.mobile-nav-drawer .nav-group-label { display: block; padding: 0 10px 6px; font-size: 11px; }
+.mobile-nav-drawer .workspace-nav button { min-height: 36px; padding: 7px 10px; font-size: 13px; }
+.mobile-nav-drawer .workspace-nav .nav-key { display: none; }
+.mobile-nav-settings { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+.mobile-nav-settings .button { min-height: 36px; }
+
+@media (max-width: 600px) {
+  .app-shell:not(.onboarding-shell):not(.companion-shell) { grid-template-columns: minmax(0, 1fr); }
+  .app-shell:not(.onboarding-shell):not(.companion-shell) > .app-header { display: none; }
+  .app-shell:not(.onboarding-shell):not(.companion-shell) > .workspace-body,
+  .app-shell:not(.onboarding-shell):not(.companion-shell) > .keybar { grid-column: 1; }
+  .app-shell:not(.onboarding-shell):not(.companion-shell) .mobile-navigation {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 56px;
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--line-soft);
+    background: var(--recessed);
+  }
+  .mobile-navigation .button { min-height: 36px; flex: none; }
+  .mobile-location { flex: 1; min-width: 0; color: var(--muted); font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
+  .app-shell:not(.onboarding-shell):not(.companion-shell) .page-heading > .button { display: none; }
+}

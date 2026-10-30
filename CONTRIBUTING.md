@@ -6,11 +6,16 @@ For a substantial feature or change to a public API, open an issue describing th
 
 ## Development and verification
 
-Install Xcode Command Line Tools, then run:
+Install Xcode Command Line Tools and Node.js (18 or newer), then run:
 
 ```sh
 ./scripts/bootstrap.sh
 ./scripts/cargo.sh fmt --all -- --check
+RUSTUP_HOME="$PWD/.tools/rustup" CARGO_HOME="$PWD/.tools/cargo" \
+  .tools/cargo/bin/rustc --edition 2024 --test apps/ui/src/bragbook_review_state.rs -o /tmp/thesaurus-review-state-tests
+/tmp/thesaurus-review-state-tests
+node scripts/test-dialogs.mjs
+node --test scripts/test-recovery.cjs
 ./scripts/cargo.sh test --locked --all-targets \
   -p thesaurus-contracts -p thesaurus-client -p thesaurus-mcp \
   -p thesaurus-plugin-sdk -p thesaurus-core -p thesaurus

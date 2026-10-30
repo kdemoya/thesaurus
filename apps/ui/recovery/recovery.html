@@ -1,3 +1,24 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Thesaurus · Workspace connection</title><link rel="stylesheet" href="recovery.css"><script defer src="recovery.js"></script></head>
-<body><main><header><span aria-hidden="true">::</span> thesaurus <small>/ workspace connection</small></header><section aria-labelledby="heading"><p class="state" id="phase">connecting</p><h1 id="heading">Connecting to your workspace</h1><p id="detail">Checking the local service and desktop providers.</p><p id="error" role="alert" hidden></p></section><nav aria-label="Recovery actions"><button id="retry">Retry connection</button><button id="start" hidden>Start local service</button><button id="enable" hidden>Enable window provider</button><button id="quit">Quit app</button></nav><p class="hint" id="hint" role="status">The service and its work can continue independently of this window.</p></main></body></html>
+<body>
+<main>
+  <header><span aria-hidden="true">::</span> thesaurus <small>/ workspace connection</small></header>
+  <section aria-labelledby="heading">
+    <p class="state" id="phase">connecting</p>
+    <h1 id="heading">Connecting to your workspace</h1>
+    <p id="detail">Checking the local service and desktop providers.</p>
+    <div id="other-desktop-help" hidden>
+      <h2>Find the connected window</h2>
+      <ol>
+        <li>Open Mission Control and look for another Thesaurus window. You can also check each Thesaurus icon in the Dock.</li>
+        <li>Continue your work there. To use this copy instead, save any edits and quit the other copy from its Thesaurus menu.</li>
+        <li>Return here and retry the connection. Closing a window alone may leave that copy running.</li>
+      </ol>
+      <details><summary>Can’t find another window?</summary><p>This screen cannot identify which copy holds the connection, or whether that copy has just stopped. Check for an extra Thesaurus app in Activity Monitor. If you recently quit it, wait a moment and retry.</p></details>
+    </div>
+    <p id="error" role="alert" hidden></p>
+  </section>
+  <nav id="recovery-actions" aria-label="Recovery actions"><button id="retry">Retry connection</button><button id="start" hidden>Start local service</button><button id="enable" hidden>Enable window provider</button><button id="quit">Quit this copy</button></nav>
+  <p class="hint" id="hint" role="status">The service and its work can continue independently of this window.</p>
+</main>
+</body></html>

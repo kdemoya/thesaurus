@@ -54,6 +54,10 @@ env -u APPLE_SIGNING_IDENTITY -u APPLE_ID -u APPLE_PASSWORD -u APPLE_API_KEY \
   -u APPLE_CERTIFICATE_PASSWORD -u APPLE_TEAM_ID \
   "$ROOT/.tools/tauri/node_modules/.bin/tauri" "$@" -- --locked
 
+# The desktop service serves these bundled assets; catch stale or incomplete
+# copies before signing a build that should match the browser release.
+diff -qr "$ROOT/apps/ui/dist" "$ROOT/target/$PROFILE/bundle/macos/Thesaurus.app/Contents/Resources/resources/web"
+
 # A private local development keychain is deliberately outside the general
 # keychain search list. Tauri makes the initial ad hoc bundle; finish signing
 # it with the persistent local identity after bundling, before any activation.
